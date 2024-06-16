@@ -1,0 +1,354 @@
+Brand,Model,Battery,Acceleration(0-100km/h) Time,Top_Speed,Range(km),Efficiency(Wh/km),Fastcharge,Drive_Configuration,Tow_Hitch,Towing_capacity_in_kg,Number_of_seats,Estimated_US_Value
+TESLA,Model 3,57.5,6.1,201,415,139,690,Rear Wheel Drive,Towbar possible,1000,5,49827
+TESLA,Model Y,57.5,6.9,217,350,164,580,Rear Wheel Drive,Towbar possible,1600,5,56057
+TESLA,Model Y Long Range Dual Motor,75.0,5.0,217,435,172,670,All Wheel Drive,Towbar possible,1600,5,66025
+TESLA,Model 3 Long Range Dual Motor,75.0,4.4,201,500,150,770,All Wheel Drive,Towbar possible,1000,5,62287
+TESLA,Model Y Long Range RWD,75.0,5.9,217,460,163,710,Rear Wheel Drive,Towbar possible,1600,5,27927
+BYD,ATTO 3,60.5,7.3,160,330,183,370,Front Wheel Drive,Towbar not possible,0,5,46344
+MG,MG4 Electric 64 kWh,61.7,7.9,160,360,171,630,Rear Wheel Drive,Towbar possible,500,5,36750
+BYD,SEAL 82.5 kWh AWD Excellence,82.5,3.8,180,490,168,540,All Wheel Drive,Towbar not possible,0,5,60673
+TESLA,Model Y Performance,75.0,3.8,250,415,181,640,All Wheel Drive,Towbar possible,1600,5,74747
+BMW,i4 eDrive40,80.7,5.7,190,515,157,800,Rear Wheel Drive,Towbar possible,1600,5,72130
+CITROEN,e-C3,44.0,11.0,135,265,166,340,Front Wheel Drive,Towbar possible,550,5,26166
+BMW,iX xDrive40,71.0,6.1,200,360,197,480,All Wheel Drive,Towbar possible,2500,5,87101
+VOLKSWAGEN,ID.4 Pro,77.0,6.7,180,435,177,650,Rear Wheel Drive,Towbar possible,1000,5,57359
+BYD,DOLPHIN 60.4 kWh,60.5,7.0,160,340,178,340,Front Wheel Drive,Towbar possible,0,5,37622
+VOLVO,EX30 Single Motor ER,64.0,5.3,180,360,178,600,Rear Wheel Drive,Towbar possible,1400,5,48027
+TESLA,Model S Plaid,95.0,2.3,282,560,170,780,All Wheel Drive,Towbar possible,1600,5,124600
+TESLA,Model S Dual Motor,95.0,3.2,250,575,165,800,All Wheel Drive,Towbar possible,1600,5,105910
+KIA,Niro EV,64.8,7.8,167,385,168,390,Front Wheel Drive,Towbar possible,750,5,46469
+HYUNDAI,Kona Electric 65 kWh,65.4,7.8,170,390,168,400,Front Wheel Drive,Towbar possible,750,5,48089
+TESLA,Model 3 Performance,75.0,3.2,262,455,165,700,All Wheel Drive,Towbar not possible,0,5,74747
+BYD,HAN,85.4,3.9,180,475,180,450,All Wheel Drive,Towbar not possible,0,5,39100
+CUPRA,Born 150 kW - 58 kWh,58.0,7.3,160,350,166,470,Rear Wheel Drive,Towbar not possible,0,5,45447
+FIAT,500e Hatchback 42 kWh,37.3,9.0,150,235,159,390,Front Wheel Drive,Towbar not possible,0,4,38868
+BYD,SEAL 82.5 kWh RWD Design,82.5,5.9,180,500,165,550,Rear Wheel Drive,Towbar not possible,0,5,56935
+BYD,TANG,86.4,4.6,180,355,243,420,All Wheel Drive,Towbar possible,1500,7,39100
+DACIA,Spring Electric 45,25.0,19.1,125,165,152,180,Front Wheel Drive,Towbar not possible,0,4,23903
+RENAULT,Scenic E-Tech EV87 220hp,87.0,7.9,170,490,178,510,Front Wheel Drive,Towbar possible,1100,5,51079
+BMW,iX3,74.0,6.8,180,385,192,520,Rear Wheel Drive,Towbar possible,750,5,79949
+BMW,iX1 xDrive30,64.7,5.6,180,380,170,510,All Wheel Drive,Towbar possible,1200,5,59141
+TESLA,Model Y,57.5,6.9,217,350,164,810,Rear Wheel Drive,Towbar possible,1600,5,56057
+SKODA,Enyaq 85,77.0,6.7,180,450,171,670,Rear Wheel Drive,Towbar possible,1000,5,55496
+NIO,ET7 75 kWh,70.5,3.8,200,400,176,600,All Wheel Drive,Towbar possible,2000,5,47430
+AUDI,Q6 e-tron quattro,94.9,5.9,210,460,206,920,All Wheel Drive,Towbar possible,2400,5,85942
+BYD,SEAL U 71.8 kWh Comfort,71.8,9.3,175,340,211,320,Front Wheel Drive,Towbar not possible,0,5,24016
+MG,ZS EV Long Range,68.3,8.4,175,370,185,420,Front Wheel Drive,Towbar possible,500,5,41111
+TOYOTA,bZ4X FWD,64.0,7.5,160,340,188,510,Front Wheel Drive,Towbar possible,750,5,57453
+RENAULT,5 E-Tech 52kWh 150hp,52.0,7.5,150,330,158,420,Front Wheel Drive,Towbar possible,500,5,34888
+BMW,i4 M50,80.7,3.9,225,450,179,700,All Wheel Drive,Towbar possible,1600,5,88571
+RENAULT,Megane E-Tech EV60 220hp,60.0,7.4,160,380,158,530,Front Wheel Drive,Towbar possible,900,5,46095
+ROLLS-ROYCE,Spectre,102.0,4.5,250,465,219,540,All Wheel Drive,Towbar not possible,0,4,411180
+KIA,EV6 Long Range 2WD,74.0,7.3,185,410,180,1070,Rear Wheel Drive,Towbar possible,1600,5,56375
+HONDA,e:Ny1,61.9,7.6,160,335,185,300,Front Wheel Drive,Towbar not possible,0,5,56063
+VOLKSWAGEN,ID.3 Pro,58.0,7.3,160,350,166,450,Rear Wheel Drive,Towbar possible,0,5,46245
+RENAULT,Zoe ZE50 R110,52.0,11.4,135,315,165,230,Front Wheel Drive,Towbar not possible,0,5,19494
+NISSAN,Leaf,39.0,7.9,144,235,166,230,Front Wheel Drive,Towbar not possible,0,5,36127
+LUCID,Air Grand Touring,112.0,3.0,270,665,168,840,All Wheel Drive,Towbar not possible,0,5,73743
+HONGQI,E-HS9 99 kWh,90.0,4.9,200,370,243,430,All Wheel Drive,Towbar possible,1500,5,44690
+CUPRA,Born 170 kW - 77 kWh,77.0,7.0,160,450,171,630,Rear Wheel Drive,Towbar not possible,0,4,52300
+ZEEKR,001 Long Range RWD,94.0,7.2,200,525,179,710,Rear Wheel Drive,Towbar possible,1500,5,33793
+HYUNDAI,IONIQ 6 Long Range 2WD,74.0,7.4,185,495,149,1290,Rear Wheel Drive,Towbar possible,1500,5,58611
+HYUNDAI,IONIQ 5 Long Range 2WD,74.0,7.3,185,390,190,1020,Rear Wheel Drive,Towbar possible,1600,5,58493
+PORSCHE,Macan 4 Electric,95.0,5.2,220,485,196,970,All Wheel Drive,Towbar possible,2000,5,86970
+BMW,i7 xDrive60,101.7,4.7,240,510,199,760,All Wheel Drive,Towbar possible,2000,5,142006
+BMW,i4 eDrive35,67.0,6.0,190,430,156,580,Rear Wheel Drive,Towbar possible,1600,5,62293
+HYUNDAI,IONIQ 5 N,80.0,3.4,260,385,208,950,All Wheel Drive,Towbar not possible,0,5,80990
+VOLKSWAGEN,ID.7 Pro,77.0,6.5,180,475,162,730,Rear Wheel Drive,Towbar possible,1000,5,69240
+MERCEDES-BENZ,EQB 250+,70.5,8.9,160,415,170,490,Front Wheel Drive,Towbar possible,1400,7,65788
+MG,MG4 Electric 51 kWh,50.8,7.7,160,300,169,380,Rear Wheel Drive,Towbar possible,500,5,33635
+AUDI,Q4 e-tron 45,77.0,6.7,180,420,183,630,Rear Wheel Drive,Towbar possible,1000,5,63228
+KIA,EV9 99.8 kWh AWD,96.0,6.0,200,435,221,830,All Wheel Drive,Towbar possible,2500,7,39941
+SMART,#1 Pro+,62.0,6.7,180,335,185,520,Rear Wheel Drive,Towbar possible,1600,5,44793
+AUDI,Q8 e-tron 55 quattro,106.0,5.6,200,505,210,640,All Wheel Drive,Towbar possible,1800,5,96938
+NISSAN,Ariya 87kWh,87.0,7.6,160,450,193,540,Front Wheel Drive,Towbar possible,750,5,55627
+FORD,Mustang Mach-E ER RWD,91.0,7.0,180,480,190,420,Rear Wheel Drive,Towbar possible,1500,5,74548
+BMW,iX xDrive50,105.2,4.6,200,505,208,680,All Wheel Drive,Towbar possible,2500,5,128032
+VOLVO,EX30 Single Motor,49.0,5.7,180,275,178,420,Rear Wheel Drive,Towbar possible,1000,5,42108
+BMW,iX1 eDrive20,64.7,8.3,170,390,166,520,Front Wheel Drive,Towbar possible,750,5,56649
+HYUNDAI,IONIQ 6 Long Range AWD,74.0,5.1,185,440,168,1150,All Wheel Drive,Towbar possible,1500,5,62972
+KIA,EV6 GT,74.0,3.5,260,360,206,940,All Wheel Drive,Towbar possible,1800,5,78055
+OPEL,Astra Electric,50.8,9.2,170,320,159,510,Front Wheel Drive,Towbar possible,0,5,47092
+MERCEDES-BENZ,EQA 250,66.5,8.6,160,395,168,570,Front Wheel Drive,Towbar possible,1500,5,53823
+PEUGEOT,e-3008 98 kWh Long Range,98.0,8.9,170,510,192,660,Front Wheel Drive,Towbar possible,1200,5,64792
+MERCEDES-BENZ,EQS 450+,108.4,6.1,210,635,171,950,Rear Wheel Drive,Towbar possible,750,5,62972
+POLESTAR,2 Long Range Single Motor,79.0,6.2,205,470,168,700,Rear Wheel Drive,Towbar possible,1500,5,60991
+PEUGEOT,e-3008 73 kWh,73.0,8.7,170,385,190,440,Front Wheel Drive,Towbar possible,1250,5,57129
+VOLKSWAGEN,ID. Buzz Pro,77.0,10.2,145,345,223,480,Rear Wheel Drive,Towbar possible,1000,5,73408
+HYUNDAI,IONIQ 5 Long Range AWD,74.0,5.1,185,385,192,1010,All Wheel Drive,Towbar possible,1600,5,62854
+JEEP,Avenger Electric,50.8,9.0,150,310,164,500,Front Wheel Drive,Towbar not possible,0,5,43360
+HYUNDAI,IONIQ 5 Standard Range 2WD,54.0,8.5,185,295,183,720,Rear Wheel Drive,Towbar possible,750,5,54132
+ZEEKR,001 Performance AWD,94.0,3.8,200,500,188,670,All Wheel Drive,Towbar possible,2000,5,35469
+BMW,i5 eDrive40 Sedan,81.2,6.0,193,470,173,750,Rear Wheel Drive,Towbar possible,1500,5,92334
+CITROEN,e-C4,46.3,9.7,150,290,160,460,Front Wheel Drive,Towbar not possible,0,5,39865
+FORD,Explorer Extended Range RWD,77.0,6.4,180,430,179,640,Rear Wheel Drive,Towbar possible,1000,5,57160
+KIA,EV6 Long Range AWD,74.0,5.2,185,400,185,1050,All Wheel Drive,Towbar possible,1600,5,64474
+MAZDA,MX-30,30.0,9.7,140,170,176,170,Front Wheel Drive,Towbar not possible,0,5,38937
+ALFA ROMEO,Junior Elettrica 54 kWh Veloce,50.8,7.0,150,305,167,490,Front Wheel Drive,Towbar not possible,0,5,52332
+VOLVO,EX30 Twin Motor Performance,64.0,3.6,180,335,191,560,All Wheel Drive,Towbar possible,1600,5,51079
+MINI,Countryman E,64.7,8.6,170,385,168,520,Front Wheel Drive,Towbar possible,750,5,52431
+NIO,ET5 100 kWh,90.0,4.0,200,500,180,520,All Wheel Drive,Towbar possible,1400,5,40055
+VOLKSWAGEN,ID. Buzz LWB Pro S,86.0,8.0,160,370,232,470,Rear Wheel Drive,Towbar possible,0,7,80990
+TESLA,Model X Dual Motor,95.0,3.9,250,475,200,660,All Wheel Drive,Towbar possible,2250,7,130830
+VOLKSWAGEN,ID.7 Pro S,86.0,7.0,180,520,165,800,Rear Wheel Drive,Towbar not possible,0,5,73514
+MG,MG4 Electric 77 kWh,74.4,6.5,180,425,175,430,Rear Wheel Drive,Towbar possible,500,5,45472
+DACIA,Spring Electric 45,25.0,19.1,125,165,152,180,Front Wheel Drive,Towbar not possible,0,4,18683
+MG,MG5 Electric Long Range,57.4,7.7,185,335,171,330,Front Wheel Drive,Towbar possible,500,5,38619
+KIA,EV9 99.8 kWh AWD GT-Line,96.0,5.3,200,425,226,810,All Wheel Drive,Towbar possible,2500,7,91263
+MERCEDES-BENZ,EQV 300 Long,90.0,12.1,160,315,286,320,Front Wheel Drive,Towbar not possible,0,7,49511
+BYD,SEAL U 87 kWh Design,87.0,9.6,175,405,215,370,Front Wheel Drive,Towbar not possible,0,5,25692
+BYD,DOLPHIN 44.9 kWh Active,44.9,12.3,150,255,176,260,Front Wheel Drive,Towbar not possible,0,5,32396
+SMART,#1 Brabus,62.0,3.9,180,325,191,500,All Wheel Drive,Towbar possible,1600,5,54138
+LOTUS,Eletre,109.0,4.5,250,495,220,1040,All Wheel Drive,Towbar possible,2250,5,113143
+RENAULT,Zoe ZE50 R135,52.0,9.5,140,310,168,230,Front Wheel Drive,Towbar not possible,0,5,37373
+MAXUS,MIFA 9,84.0,9.2,180,365,230,420,Front Wheel Drive,Towbar possible,1000,7,81351
+LEXUS,RZ 450e,64.0,5.6,160,320,200,480,All Wheel Drive,Towbar possible,750,5,80367
+MERCEDES-BENZ,EQE 350+,90.6,6.4,210,530,171,790,Rear Wheel Drive,Towbar possible,750,5,45825
+BMW,i5 M60 xDrive Sedan,81.2,3.8,230,420,193,670,All Wheel Drive,Towbar possible,2000,5,121790
+CUPRA,Tavascan VZ,77.0,5.6,180,430,179,640,All Wheel Drive,Towbar not possible,0,5,68530
+XPENG,G9 RWD Standard Range,75.8,6.4,200,395,192,830,Rear Wheel Drive,Towbar possible,1500,5,33065
+SUBARU,Solterra AWD,64.0,6.9,160,320,200,480,All Wheel Drive,Towbar possible,750,5,62293
+XPENG,G6 RWD Long Range,87.5,6.7,200,490,179,980,Rear Wheel Drive,Towbar possible,0,5,27933
+MINI,Cooper SE,49.8,6.7,170,305,163,440,Front Wheel Drive,Towbar not possible,0,4,42987
+HYUNDAI,IONIQ 6 Standard Range 2WD,54.0,8.8,185,365,148,900,Rear Wheel Drive,Towbar possible,750,5,25639
+MASERATI,GranTurismo Folgore,83.0,2.7,325,420,198,920,All Wheel Drive,Towbar not possible,0,4,224217
+VOLVO,EX40 Single Motor ER,79.0,7.3,180,400,198,600,Rear Wheel Drive,Towbar possible,1500,5,59440
+TOYOTA,bZ4X AWD,64.0,6.9,160,315,203,470,All Wheel Drive,Towbar possible,750,5,65427
+BMW,iX2 xDrive30,64.7,5.6,180,380,170,510,All Wheel Drive,Towbar possible,1200,5,71576
+FORD,Explorer Extended Range AWD,79.0,5.3,180,430,184,690,All Wheel Drive,Towbar possible,1200,5,67252
+SKODA,Enyaq Coupe 85,77.0,6.7,180,480,160,720,Rear Wheel Drive,Towbar possible,1000,5,57864
+MG,ZS EV Standard Range,49.0,8.6,175,265,185,250,Front Wheel Drive,Towbar possible,500,5,37996
+FISKER,Ocean Extreme,106.5,3.9,205,490,217,580,All Wheel Drive,Towbar possible,1820,5,72143
+VOLKSWAGEN,ID.7 Tourer Pro,77.0,6.6,180,460,167,710,Rear Wheel Drive,Towbar possible,1000,5,71022
+RENAULT,Twingo Electric,21.3,12.6,135,135,158,0,Rear Wheel Drive,Towbar not possible,0,4,29680
+POLESTAR,4 Long Range Single Motor,94.0,7.4,180,495,190,670,Rear Wheel Drive,Towbar possible,1500,5,74747
+POLESTAR,4 Long Range Dual Motor,94.0,3.8,200,465,202,630,All Wheel Drive,Towbar possible,2000,5,83469
+FISKER,Ocean Ultra,106.5,4.2,200,510,209,610,All Wheel Drive,Towbar possible,1820,5,63421
+TESLA,Model X Plaid,95.0,2.7,262,455,209,630,All Wheel Drive,Towbar possible,2250,7,149520
+MG,MG4 Electric XPOWER,61.7,3.8,200,320,193,560,All Wheel Drive,Towbar possible,500,5,45472
+ALFA ROMEO,Junior Elettrica 54 kWh,50.8,9.0,150,315,161,500,Front Wheel Drive,Towbar not possible,0,5,44856
+OPEL,Mokka-e 50 kWh,46.3,9.2,150,260,178,420,Front Wheel Drive,Towbar not possible,0,5,45616
+KIA,EV9 99.8 kWh RWD,96.0,9.4,185,450,213,850,Rear Wheel Drive,Towbar possible,900,7,80983
+PEUGEOT,e-208 50 kWh,46.3,9.0,150,290,160,460,Front Wheel Drive,Towbar not possible,0,5,40681
+MERCEDES-BENZ,EQE 300,89.0,7.3,210,525,170,660,Rear Wheel Drive,Towbar possible,750,5,85737
+POLESTAR,2 Standard Range Single Motor,67.0,6.4,205,405,165,480,Rear Wheel Drive,Towbar possible,1500,5,56007
+VOLKSWAGEN,ID.7 Tourer GTX,86.0,6.0,180,480,179,770,All Wheel Drive,Towbar possible,0,5,80990
+POLESTAR,2 Long Range Dual Motor,79.0,4.5,205,450,176,670,All Wheel Drive,Towbar possible,1500,5,65975
+MASERATI,GranCabrio Folgore,83.0,2.8,290,395,210,870,All Wheel Drive,Towbar not possible,0,4,231270
+HYUNDAI,Kona Electric 48 kWh,48.4,8.8,160,295,164,280,Front Wheel Drive,Towbar possible,300,5,43603
+SMART,#3 Brabus,62.0,3.7,180,335,185,520,All Wheel Drive,Towbar possible,1600,5,56070
+PORSCHE,Macan Turbo Electric,95.0,3.3,260,480,198,960,All Wheel Drive,Towbar possible,2000,5,118370
+VOLKSWAGEN,ID.4 Pro 4MOTION,77.0,6.6,180,425,181,630,All Wheel Drive,Towbar possible,1200,5,29044
+LANCIA,Ypsilon,48.1,8.5,150,305,158,470,Front Wheel Drive,Towbar not possible,0,5,22346
+VOLKSWAGEN,ID.7 Tourer Pro S,86.0,7.0,180,505,170,810,Rear Wheel Drive,Towbar possible,0,5,74760
+FIAT,600e,50.8,9.0,150,305,167,490,Front Wheel Drive,Towbar not possible,0,5,41111
+NISSAN,Leaf e+,59.0,6.9,157,340,174,240,Front Wheel Drive,Towbar not possible,0,5,43566
+PEUGEOT,e-5008 73 kWh,73.0,9.0,170,370,197,430,Front Wheel Drive,Towbar possible,1000,7,59808
+MERCEDES-BENZ,EQB 350 4MATIC,66.5,6.2,160,345,193,500,All Wheel Drive,Towbar possible,1700,7,70785
+PORSCHE,Taycan Plus,97.0,4.8,230,560,173,1230,Rear Wheel Drive,Towbar not possible,0,5,113328
+VOLKSWAGEN,ID.5 Pro,77.0,6.7,180,455,169,680,Rear Wheel Drive,Towbar possible,1000,5,63471
+MERCEDES-BENZ,EQA 250+,70.5,8.6,160,420,168,500,Front Wheel Drive,Towbar possible,1500,5,61988
+FORD,Mustang Mach-E ER AWD,91.0,5.8,180,445,204,390,All Wheel Drive,Towbar possible,1500,5,81494
+AUDI,Q8 e-tron Sportback 55 quattro,106.0,5.6,200,525,202,660,All Wheel Drive,Towbar possible,1800,5,100053
+XPENG,G9 RWD Long Range,93.1,6.4,200,480,194,1120,Rear Wheel Drive,Towbar possible,1500,5,35300
+RENAULT,5 E-Tech 40kWh 95hp,40.0,10.0,140,260,154,0,Front Wheel Drive,Towbar possible,500,5,27412
+GWM,ORA 3 48 kWh,45.4,8.3,160,260,175,240,Front Wheel Drive,Towbar not possible,0,5,39865
+NIO,ET7 100 kWh,90.0,3.8,200,505,178,530,All Wheel Drive,Towbar possible,2000,5,52458
+KIA,EV6 Standard Range 2WD,54.0,8.5,185,305,177,750,Rear Wheel Drive,Towbar possible,750,5,24298
+SKODA,Enyaq 60,58.0,8.7,160,335,173,450,Rear Wheel Drive,Towbar possible,1000,5,48556
+ZEEKR,X Privilege AWD,64.0,3.8,180,345,186,580,All Wheel Drive,Towbar possible,1600,5,27089
+PEUGEOT,e-2008 54 kWh,50.8,9.1,150,300,169,480,Front Wheel Drive,Towbar not possible,0,5,45292
+VOLKSWAGEN,ID.3 Pro S - 4 Seats,77.0,7.9,160,455,169,680,Rear Wheel Drive,Towbar possible,0,4,53416
+NIO,EL6 100 kWh,90.0,4.5,200,435,207,630,All Wheel Drive,Towbar possible,1200,5,42960
+VOYAH,Free 106 kWh,100.0,4.4,200,480,208,360,All Wheel Drive,Towbar possible,2000,5,41424
+VOLKSWAGEN,ID. Buzz GTX,79.0,6.5,160,335,236,520,All Wheel Drive,Towbar possible,1800,5,87220
+DACIA,Spring Electric 65 Extreme,25.0,13.7,125,160,156,170,Front Wheel Drive,Towbar not possible,0,4,26023
+MERCEDES-BENZ,EQS 580 4MATIC,108.4,4.3,210,590,184,880,All Wheel Drive,Towbar possible,750,5,97109
+LUCID,Air Touring,92.0,3.2,250,580,159,970,All Wheel Drive,Towbar not possible,0,5,56983
+BMW,iX M60,105.2,3.8,250,485,217,650,All Wheel Drive,Towbar possible,2500,5,152977
+PORSCHE,Taycan,82.3,4.8,230,485,170,1070,Rear Wheel Drive,Towbar not possible,0,5,107779
+PORSCHE,Taycan Turbo GT,97.0,2.3,290,475,204,1050,All Wheel Drive,Towbar not possible,0,5,232129
+BMW,iX2 eDrive20,64.7,8.6,170,395,164,530,Front Wheel Drive,Towbar possible,750,5,64312
+OPEL,Corsa Electric 50 kWh,46.3,8.7,150,295,157,470,Front Wheel Drive,Towbar not possible,0,5,40426
+PEUGEOT,e-308,50.8,9.8,170,300,169,450,Front Wheel Drive,Towbar not possible,0,5,52363
+VOLKSWAGEN,ID.4 Pure,52.0,9.0,160,285,182,360,Rear Wheel Drive,Towbar possible,1000,5,25134
+PEUGEOT,e-5008 98 kWh Long Range,98.0,9.7,170,490,200,640,Front Wheel Drive,Towbar possible,0,7,68530
+MG,Marvel R,70.0,7.9,200,365,192,400,Rear Wheel Drive,Towbar possible,750,5,24851
+JAGUAR,I-Pace EV400,84.7,4.8,200,380,223,360,All Wheel Drive,Towbar possible,750,5,87213
+AUDI,Q8 e-tron 50 quattro,89.0,6.0,200,425,209,660,All Wheel Drive,Towbar possible,1800,5,84478
+VOLKSWAGEN,ID.4 GTX,77.0,5.4,180,420,183,630,All Wheel Drive,Towbar possible,1200,5,67115
+DACIA,Spring Electric 65,25.0,13.7,125,160,156,170,Front Wheel Drive,Towbar not possible,0,4,19929
+XPENG,G6 RWD Standard Range,66.0,6.9,200,375,176,750,Rear Wheel Drive,Towbar possible,0,5,25139
+NISSAN,Ariya 63kWh,63.0,7.5,160,335,188,450,Front Wheel Drive,Towbar possible,750,5,49397
+VOLVO,EC40 Single Motor ER,79.0,7.3,180,420,188,630,Rear Wheel Drive,Towbar possible,1500,5,67664
+CUPRA,Born VZ,79.0,5.7,160,460,172,690,Rear Wheel Drive,Towbar not possible,0,4,58562
+VOLKSWAGEN,ID.3 GTX,79.0,6.0,180,460,172,690,Rear Wheel Drive,Towbar not possible,0,4,58562
+AUDI,Q4 e-tron 55 quattro,77.0,5.4,180,395,195,590,All Wheel Drive,Towbar possible,1200,5,71177
+PEUGEOT,e-208 51 kWh,48.1,8.2,150,310,155,480,Front Wheel Drive,Towbar not possible,0,5,40370
+VINFAST,VF 9 Extended Range,123.0,6.5,200,520,237,520,All Wheel Drive,Towbar not possible,0,7,51005
+MERCEDES-BENZ,EQB 300 4MATIC,66.5,8.0,160,345,193,500,All Wheel Drive,Towbar possible,1700,7,34289
+SKODA,Enyaq 85x,77.0,6.6,180,440,175,660,All Wheel Drive,Towbar possible,1000,5,60561
+KIA,e-Soul 64 kWh,64.0,7.9,167,370,173,350,Front Wheel Drive,Towbar possible,0,5,48687
+RENAULT,Kangoo E-Tech Electric,45.0,12.6,132,220,205,230,Front Wheel Drive,Towbar possible,1500,5,41658
+MASERATI,Grecale Folgore,95.0,4.1,220,400,238,440,All Wheel Drive,Towbar possible,1800,5,136941
+POLESTAR,3 Long Range Dual motor,107.0,5.0,210,490,218,640,All Wheel Drive,Towbar possible,2200,5,94571
+LOTUS,Eletre R,109.0,2.9,260,455,240,950,All Wheel Drive,Towbar possible,2250,5,151146
+NIO,EL7 100 kWh,90.0,3.9,200,430,209,450,All Wheel Drive,Towbar possible,2000,5,54692
+CITROEN,e-C4 X,46.3,9.7,150,285,162,460,Front Wheel Drive,Towbar not possible,0,5,39865
+VOLVO,EX40 Single Motor,67.0,7.3,180,345,194,530,Rear Wheel Drive,Towbar possible,1500,5,57259
+XPENG,P7 Wing Edition,82.7,4.1,200,455,182,730,All Wheel Drive,Towbar not possible,0,5,39769
+SKODA,Enyaq Coupe RS,77.0,5.5,180,455,169,680,All Wheel Drive,Towbar possible,1200,5,68305
+FORD,Mustang Mach-E SR RWD,72.6,7.3,180,380,191,460,Rear Wheel Drive,Towbar possible,750,5,63334
+AUDI,Q4 Sportback e-tron 45,77.0,6.7,180,435,177,650,Rear Wheel Drive,Towbar possible,1000,5,65097
+VOLVO,EX40 Twin Motor,79.0,4.8,180,385,205,570,All Wheel Drive,Towbar possible,1800,5,72025
+SSANGYONG,Korando e-Motion,56.0,8.5,156,290,193,330,Front Wheel Drive,Towbar possible,1500,5,22340
+SMART,#1 Pro,47.0,6.7,180,250,188,320,Rear Wheel Drive,Towbar not possible,0,5,39809
+AUDI,SQ6 e-tron,94.9,4.3,230,445,213,890,All Wheel Drive,Towbar possible,2400,5,115815
+SERES,3,51.0,8.9,155,260,196,240,Front Wheel Drive,Towbar not possible,0,5,21226
+VOLVO,EX90 Twin Motor,107.0,5.9,180,465,230,610,All Wheel Drive,Towbar possible,2200,7,119933
+BMW,i7 eDrive50,101.7,5.5,205,520,196,780,Rear Wheel Drive,Towbar not possible,0,5,124855
+MINI,Cooper E,36.8,7.3,160,230,160,350,Front Wheel Drive,Towbar not possible,0,4,37380
+AUDI,Q4 e-tron 45 quattro,77.0,6.6,180,395,195,590,All Wheel Drive,Towbar possible,1200,5,65010
+OPEL,Corsa Electric 51 kWh,48.1,8.1,150,315,153,490,Front Wheel Drive,Towbar not possible,0,5,44201
+BMW,i5 eDrive40 Touring,81.2,6.1,193,455,178,730,Rear Wheel Drive,Towbar possible,1500,5,87151
+MERCEDES-BENZ,EQS 450 4MATIC,108.4,5.6,210,610,178,910,All Wheel Drive,Towbar possible,750,5,65338
+HONGQI,E-HS9 84 kWh,76.5,6.5,200,320,239,440,All Wheel Drive,Towbar possible,1500,5,39103
+MG,Marvel R Performance,70.0,4.9,200,350,200,380,All Wheel Drive,Towbar possible,750,5,29321
+RENAULT,Scenic E-Tech EV60 170hp,60.0,8.6,150,340,176,400,Front Wheel Drive,Towbar possible,1100,5,23726
+RENAULT,Megane E-Tech EV60 130hp,60.0,10.5,150,380,158,530,Front Wheel Drive,Towbar possible,500,5,21994
+SMART,#3 Premium,62.0,5.8,180,355,175,550,Rear Wheel Drive,Towbar possible,1600,5,49840
+FIAT,500e Hatchback 24 kWh,21.3,9.0,135,135,158,230,Front Wheel Drive,Towbar not possible,0,4,35130
+RENAULT,Megane E-Tech EV40 130hp,40.0,10.0,150,260,154,370,Front Wheel Drive,Towbar possible,500,5,20318
+GENESIS,GV60 Premium,74.0,7.8,185,390,190,1020,Rear Wheel Drive,Towbar possible,1600,5,67165
+LOTUS,Emeya,100.0,4.2,250,530,189,1230,All Wheel Drive,Towbar not possible,0,5,119933
+OPEL,Astra Sports Tourer Electric,50.8,9.3,170,310,164,500,Front Wheel Drive,Towbar possible,0,5,49833
+XPENG,P7 RWD Long Range,82.7,6.7,200,495,167,800,Rear Wheel Drive,Towbar not possible,0,5,28596
+MERCEDES-BENZ,EQS SUV 450+,118.0,6.8,210,540,219,680,Rear Wheel Drive,Towbar possible,750,7,70069
+RENAULT,5 E-Tech 40kWh 120hp,40.0,9.0,140,260,154,340,Front Wheel Drive,Towbar possible,500,5,29904
+FORD,Mustang Mach-E GT,91.0,3.7,200,425,214,380,All Wheel Drive,Towbar possible,750,5,92876
+BMW,i7 M70 xDrive,101.7,3.7,250,490,208,730,All Wheel Drive,Towbar not possible,0,5,203490
+PEUGEOT,e-308 SW,50.8,10.0,150,300,169,450,Front Wheel Drive,Towbar not possible,0,5,51397
+XPENG,G6 AWD Performance,87.5,4.1,200,480,182,960,All Wheel Drive,Towbar possible,0,5,33519
+MERCEDES-BENZ,EQS SUV Maybach 680,118.0,4.4,210,490,241,620,All Wheel Drive,Towbar possible,1800,4,249200
+PEUGEOT,e-2008 50 kWh,46.3,9.9,150,270,171,430,Front Wheel Drive,Towbar not possible,0,5,21938
+NISSAN,Townstar EV Passenger,45.0,12.6,132,225,200,230,Front Wheel Drive,Towbar possible,1500,5,42389
+AUDI,SQ8 e-tron,106.0,4.5,210,455,233,570,All Wheel Drive,Towbar possible,1800,5,121485
+FORD,Explorer Standard Range RWD,52.0,9.0,160,280,186,350,Rear Wheel Drive,Towbar possible,1000,5,49684
+PORSCHE,Taycan Turbo GT Weissach,97.0,2.2,305,475,204,1050,All Wheel Drive,Towbar not possible,0,2,232129
+GWM,ORA 3 63 kWh,59.3,8.2,160,340,174,290,Front Wheel Drive,Towbar not possible,0,5,43603
+MG,MG5 Electric Standard Range,46.0,7.7,185,265,174,320,Front Wheel Drive,Towbar possible,500,5,20047
+MERCEDES-BENZ,EQS SUV 580 4MATIC,118.0,4.7,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,173779
+LUCID,Air Pure RWD,92.0,4.7,200,565,163,940,All Wheel Drive,Towbar not possible,0,5,49162
+VOLVO,EC40 Single Motor,67.0,7.3,180,360,186,560,Rear Wheel Drive,Towbar possible,1500,5,65483
+PORSCHE,Taycan 4S Plus,97.0,3.7,250,550,176,1210,All Wheel Drive,Towbar not possible,0,5,124844
+SKODA,Enyaq Coupe 85x,77.0,6.6,180,470,164,700,All Wheel Drive,Towbar possible,1200,5,62680
+SMART,#3 Pro,47.0,5.9,180,265,177,340,Rear Wheel Drive,Towbar not possible,0,5,43610
+MINI,Countryman SE ALL4,64.7,5.6,180,370,175,500,All Wheel Drive,Towbar possible,1200,5,58786
+DS,3 E-Tense,50.8,9.0,150,300,169,480,Front Wheel Drive,Towbar not possible,0,5,46351
+VOLVO,EX90 Twin Motor Performance,107.0,4.9,180,450,238,590,All Wheel Drive,Towbar possible,2200,7,125291
+LEXUS,UX 300e,64.0,7.5,160,340,188,170,Front Wheel Drive,Towbar not possible,0,5,59178
+MERCEDES-BENZ,EQE SUV 350 4MATIC,90.6,6.6,210,435,208,550,All Wheel Drive,Towbar possible,1800,5,55357
+POLESTAR,2 Long Range Performance,79.0,4.2,205,450,176,670,All Wheel Drive,Towbar possible,1500,5,72205
+XPENG,G9 AWD Performance,93.1,3.9,200,465,200,1080,All Wheel Drive,Towbar possible,1500,5,40887
+BMW,i5 xDrive40 Sedan,81.2,5.4,215,455,178,730,All Wheel Drive,Towbar possible,2000,5,44819
+NISSAN,Ariya e-4ORCE 87kWh - 225 kW,87.0,5.7,200,405,215,480,All Wheel Drive,Towbar possible,1500,5,63352
+CUPRA,Tavascan Endurance,77.0,6.8,180,450,171,670,Rear Wheel Drive,Towbar not possible,0,5,62300
+NIO,ET5 75 kWh,70.5,4.0,200,395,178,590,All Wheel Drive,Towbar possible,1400,5,35027
+MERCEDES-BENZ,EQE 350 4MATIC,89.0,6.3,210,510,175,640,All Wheel Drive,Towbar possible,750,5,48191
+AIWAYS,U5,60.0,7.5,150,315,190,380,Front Wheel Drive,Towbar not possible,0,5,23994
+CITROEN,e-C4 X 54 kWh,50.8,9.3,150,330,154,470,Front Wheel Drive,Towbar not possible,0,5,22768
+MERCEDES-BENZ,EQS AMG 53 4MATIC+,108.4,3.4,250,535,203,800,All Wheel Drive,Towbar possible,750,5,97109
+FIAT,500e 3+1 42 kWh,37.3,9.0,150,235,159,390,Front Wheel Drive,Towbar not possible,0,4,19826
+ABARTH,500e Hatchback,37.8,7.0,155,225,168,370,Front Wheel Drive,Towbar not possible,0,4,42606
+OPEL,Mokka-e 54 kWh,50.8,9.0,150,290,175,460,Front Wheel Drive,Towbar not possible,0,5,46425
+NIO,ET5 Touring 100 kWh,90.0,4.0,200,485,186,700,All Wheel Drive,Towbar possible,1400,5,40726
+FISKER,Ocean Sport,71.0,7.4,160,350,203,470,Front Wheel Drive,Towbar possible,1090,5,45977
+AUDI,Q4 Sportback e-tron 55 quattro,77.0,5.4,180,415,186,620,All Wheel Drive,Towbar possible,1200,5,73046
+MERCEDES-BENZ,EQS SUV 450 4MATIC,118.0,6.1,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,161319
+ZEEKR,X Long Range RWD,64.0,5.6,180,355,180,590,Rear Wheel Drive,Towbar possible,1600,5,24296
+CUPRA,Born 170 kW - 58 kWh,58.0,6.6,160,345,168,460,Rear Wheel Drive,Towbar not possible,0,5,48849
+CITROEN,e-C4 54 kWh,50.8,9.2,150,330,154,470,Front Wheel Drive,Towbar not possible,0,5,22293
+MERCEDES-BENZ,EQA 300 4MATIC,66.5,7.7,160,350,190,500,All Wheel Drive,Towbar possible,1800,5,32938
+NISSAN,Ariya e-4ORCE 87kWh - 290 kW,87.0,5.1,200,405,215,480,All Wheel Drive,Towbar possible,1500,5,36307
+GENESIS,G80 Electrified Luxury,82.5,4.9,225,440,188,880,All Wheel Drive,Towbar not possible,0,5,86977
+MERCEDES-BENZ,EQE 350,89.0,6.4,210,515,173,650,Rear Wheel Drive,Towbar possible,750,5,96371
+VOLKSWAGEN,ID.5 GTX,77.0,5.5,180,430,179,640,All Wheel Drive,Towbar possible,1200,5,68984
+ZEEKR,001 Privilege AWD,94.0,3.8,200,495,190,670,All Wheel Drive,Towbar possible,2000,5,38262
+VOLKSWAGEN,ID.3 GTX Performance,79.0,5.6,200,460,172,690,Rear Wheel Drive,Towbar not possible,0,4,62300
+LOTUS,Eletre S,109.0,4.5,250,480,227,1000,All Wheel Drive,Towbar possible,2250,5,131833
+VOLVO,EC40 Twin Motor,79.0,4.8,180,400,198,600,All Wheel Drive,Towbar possible,1800,5,72025
+PEUGEOT,e-3008 73 kWh Dual Motor,73.0,6.4,180,380,192,440,All Wheel Drive,Towbar possible,1350,5,59808
+HONGQI,E-HS9 120 kWh,112.0,4.9,200,460,243,420,All Wheel Drive,Towbar possible,1500,5,57539
+GENESIS,GV70 Electrified Sport,74.0,4.2,235,350,211,860,All Wheel Drive,Towbar possible,1800,5,81120
+MERCEDES-BENZ,EQE SUV 350+,96.0,6.9,210,475,202,660,Rear Wheel Drive,Towbar possible,750,5,51368
+MERCEDES-BENZ,EQE AMG 43 4MATIC,90.6,4.2,210,450,201,670,All Wheel Drive,Towbar possible,750,5,62049
+FORD,Mustang Mach-E SR AWD,72.6,6.2,180,350,207,430,All Wheel Drive,Towbar possible,750,5,33184
+MERCEDES-BENZ,EQS 500 4MATIC,108.4,4.8,210,590,184,880,All Wheel Drive,Towbar possible,750,5,81223
+CITROEN,e-Berlingo XL 50 kWh,50.0,11.7,132,230,217,340,Front Wheel Drive,Towbar possible,750,7,39734
+MERCEDES-BENZ,EQE SUV 500 4MATIC,96.0,4.9,210,455,211,630,All Wheel Drive,Towbar possible,1800,5,65226
+MERCEDES-BENZ,EQE AMG 53 4MATIC+,90.6,3.5,220,450,201,670,All Wheel Drive,Towbar possible,750,5,142978
+BMW,i5 M60 xDrive Touring,81.2,3.9,230,415,196,670,All Wheel Drive,Towbar possible,2000,5,124593
+MERCEDES-BENZ,EQA 350 4MATIC,66.5,6.0,160,350,190,500,All Wheel Drive,Towbar possible,1800,5,67919
+PORSCHE,Taycan 4S,82.3,3.7,250,475,173,1050,All Wheel Drive,Towbar not possible,0,5,119491
+AUDI,Q4 Sportback e-tron 45 quattro,77.0,6.6,180,415,186,620,All Wheel Drive,Towbar possible,1200,5,66879
+VOLKSWAGEN,ID. Buzz LWB GTX,86.0,6.5,160,355,242,570,All Wheel Drive,Towbar possible,1600,7,90958
+SMART,#3 Pro+,62.0,5.8,180,355,175,550,Rear Wheel Drive,Towbar possible,1600,5,46102
+E.GO,e.wave X,27.0,12.0,135,150,180,0,Rear Wheel Drive,Towbar not possible,0,4,26489
+LOTUS,Emeya S,100.0,4.2,250,530,189,1230,All Wheel Drive,Towbar not possible,0,5,135508
+POLESTAR,3 Long Range Performance,107.0,4.7,210,470,228,610,All Wheel Drive,Towbar possible,2200,5,101549
+FIAT,500e Cabrio 42 kWh,37.3,9.0,150,230,162,380,Front Wheel Drive,Towbar not possible,0,4,42606
+CITROEN,e-Berlingo M 50 kWh,50.0,11.7,132,235,213,350,Front Wheel Drive,Towbar possible,750,5,38613
+VOLVO,EC40 Twin Motor Performance,79.0,4.6,180,400,198,600,All Wheel Drive,Towbar possible,1800,5,34075
+LOTUS,Emeya R,100.0,2.8,256,470,213,1090,All Wheel Drive,Towbar not possible,0,5,163543
+MERCEDES-BENZ,EQE 500 4MATIC,90.6,4.7,210,505,179,750,All Wheel Drive,Towbar possible,750,5,63401
+PORSCHE,Taycan Turbo S,97.0,2.4,260,500,194,1100,All Wheel Drive,Towbar not possible,0,5,201104
+SMART,#1 Premium,62.0,6.7,180,335,185,520,Rear Wheel Drive,Towbar possible,1600,5,48531
+VOLVO,EX40 Twin Motor Performance,79.0,4.6,180,380,208,570,All Wheel Drive,Towbar possible,1800,5,33237
+MERCEDES-BENZ,EQT 200 Standard,45.0,12.6,132,225,200,230,Front Wheel Drive,Towbar possible,1500,5,26677
+MERCEDES-BENZ,EQE SUV 300,90.6,7.6,210,450,201,570,Rear Wheel Drive,Towbar possible,750,5,46636
+VOLVO,EX90 Single Motor,101.0,8.4,180,460,220,600,Rear Wheel Drive,Towbar possible,1200,7,46645
+PORSCHE,Taycan 4 Cross Turismo,97.0,4.7,220,505,192,1110,All Wheel Drive,Towbar not possible,0,5,120612
+AUDI,SQ8 e-tron Sportback,106.0,4.5,210,480,221,610,All Wheel Drive,Towbar possible,1800,5,124600
+MERCEDES-BENZ,EQE SUV AMG 53 4MATIC+,90.6,3.5,240,410,221,610,All Wheel Drive,Towbar possible,1800,5,83680
+XPENG,P7 AWD Performance,82.7,4.1,200,460,180,740,All Wheel Drive,Towbar not possible,0,5,34183
+SKODA,Enyaq RS,77.0,5.5,180,435,177,650,All Wheel Drive,Towbar possible,1200,5,66187
+AUDI,Q8 e-tron Sportback 50 quattro,89.0,6.0,200,445,200,690,All Wheel Drive,Towbar possible,1800,5,87593
+VINFAST,VF 8 Eco Extended Range,87.7,5.9,200,425,206,550,All Wheel Drive,Towbar not possible,0,5,30111
+BYD,DOLPHIN 44.9 kWh Boost,44.9,8.0,160,255,176,260,Front Wheel Drive,Towbar not possible,0,5,35511
+GWM,ORA 3 GT,59.3,8.2,160,325,182,280,Front Wheel Drive,Towbar not possible,0,5,52459
+MERCEDES-BENZ,EQS SUV 500 4MATIC,118.0,5.3,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,82778
+MERCEDES-BENZ,eVito Tourer Long 90 kWh,90.0,12.1,160,320,281,320,Front Wheel Drive,Towbar not possible,0,8,47359
+MERCEDES-BENZ,EQE SUV AMG 43 4MATIC,90.6,4.3,210,415,218,620,All Wheel Drive,Towbar possible,1800,5,73067
+PORSCHE,Taycan 4S Cross Turismo,97.0,3.8,240,505,192,1110,All Wheel Drive,Towbar not possible,0,5,125098
+PORSCHE,Taycan Turbo,97.0,2.7,260,520,187,1140,All Wheel Drive,Towbar not possible,0,5,167088
+GENESIS,GV60 Sport,74.0,5.5,200,380,195,990,All Wheel Drive,Towbar possible,1600,5,72722
+SKODA,Enyaq Coupe 60,58.0,8.8,160,355,163,480,Rear Wheel Drive,Towbar possible,1000,5,26810
+KIA,e-Soul 39.2 kWh,39.2,9.9,157,230,170,200,Front Wheel Drive,Towbar not possible,0,5,40962
+AIWAYS,U6,60.0,7.0,160,350,171,430,Front Wheel Drive,Towbar not possible,0,5,27360
+ELARIS,BEO 86 kWh,81.0,8.0,150,390,208,290,Front Wheel Drive,Towbar not possible,0,5,56275
+PEUGEOT,e-5008 73 kWh Dual Motor,73.0,6.0,170,365,200,420,All Wheel Drive,Towbar possible,0,7,63546
+PORSCHE,Taycan Turbo S Cross Turismo,97.0,2.5,250,475,204,1050,All Wheel Drive,Towbar not possible,0,5,202475
+NIO,ET5 Touring 75 kWh,70.5,4.0,200,385,183,570,All Wheel Drive,Towbar possible,1400,5,35698
+VOLKSWAGEN,ID. Buzz LWB Pro,77.0,7.9,160,335,230,460,Rear Wheel Drive,Towbar possible,0,7,77252
+PORSCHE,Taycan 4S Sport Turismo,82.3,3.7,250,430,191,950,All Wheel Drive,Towbar not possible,0,5,120488
+NIO,EL7 75 kWh,70.5,3.9,200,340,207,510,All Wheel Drive,Towbar possible,2000,5,49664
+PORSCHE,Taycan Sport Turismo,82.3,4.8,230,445,185,980,Rear Wheel Drive,Towbar not possible,0,5,108775
+PORSCHE,Taycan Plus Sport Turismo,97.0,4.8,230,515,188,1130,Rear Wheel Drive,Towbar not possible,0,5,114325
+SMART,#1 Pulse,62.0,4.5,180,325,191,500,All Wheel Drive,Towbar possible,1600,5,25729
+VINFAST,VF 8 Plus Extended Range,87.7,5.5,200,425,206,550,All Wheel Drive,Towbar not possible,0,5,33402
+PORSCHE,Taycan Turbo S Sport Turismo,97.0,2.4,260,460,211,1010,All Wheel Drive,Towbar not possible,0,5,201976
+NIO,EL6 75 kWh,70.5,4.5,200,350,201,520,All Wheel Drive,Towbar possible,1200,5,37933
+FIAT,500e Cabrio 24 kWh,21.3,9.0,135,135,158,230,Front Wheel Drive,Towbar not possible,0,4,17871
+MERCEDES-BENZ,EQV 250 Extra-Long,60.0,12.0,160,210,286,200,Front Wheel Drive,Towbar not possible,0,7,80790
+GENESIS,GV60 Sport Plus,74.0,4.0,235,365,203,950,All Wheel Drive,Towbar possible,1600,5,84111
+ABARTH,500e Convertible,37.8,7.0,155,225,168,370,Front Wheel Drive,Towbar not possible,0,4,46344
+PORSCHE,Taycan 4S Plus Sport Turismo,97.0,3.7,250,495,196,1090,All Wheel Drive,Towbar not possible,0,5,125841
+PORSCHE,Taycan Turbo Sport Turismo,97.0,2.7,260,470,206,1030,All Wheel Drive,Towbar not possible,0,5,167960
+FIAT,500e 3+1 24 kWh,21.3,9.0,135,135,158,230,Front Wheel Drive,Towbar not possible,0,4,17312
+PORSCHE,Taycan Turbo Cross Turismo,97.0,2.8,250,495,196,1090,All Wheel Drive,Towbar not possible,0,5,168459
+MERCEDES-BENZ,EQV 250 Long,60.0,12.0,160,215,279,200,Front Wheel Drive,Towbar not possible,0,7,79798
+MERCEDES-BENZ,eVito Tourer Long 60 kWh,60.0,12.0,160,220,273,210,Front Wheel Drive,Towbar not possible,0,8,72501
+MERCEDES-BENZ,eVito Tourer Extra-Long 60 kWh,60.0,12.0,160,215,279,200,Front Wheel Drive,Towbar not possible,0,8,73467
+KGM,Torres EVX,72.0,8.1,175,350,206,390,Front Wheel Drive,Towbar possible,1500,5,55440
+MINI,Aceman E,38.5,7.9,160,230,167,370,Front Wheel Drive,Towbar not possible,0,5,39622
+MINI,Aceman SE,49.8,7.1,170,300,166,430,Front Wheel Drive,Towbar not possible,0,5,44856
