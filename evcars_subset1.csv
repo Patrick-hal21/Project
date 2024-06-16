@@ -1,0 +1,91 @@
+Brand,Model,Battery,Acceleration(0-100km/h) Time,Top_Speed,Range(km),Efficiency(Wh/km),Fastcharge,Drive_Configuration,Tow_Hitch,Towing_capacity_in_kg,Number_of_seats,Estimated_US_Value
+VOLKSWAGEN,ID.4 Pro,77.0,6.7,180,435,177,650,Rear Wheel Drive,Towbar possible,1000,5,57359
+VOLVO,EX30 Single Motor ER,64.0,5.3,180,360,178,600,Rear Wheel Drive,Towbar possible,1400,5,48027
+KIA,Niro EV,64.8,7.8,167,385,168,390,Front Wheel Drive,Towbar possible,750,5,46469
+HYUNDAI,Kona Electric 65 kWh,65.4,7.8,170,390,168,400,Front Wheel Drive,Towbar possible,750,5,48089
+KIA,EV6 Long Range 2WD,74.0,7.3,185,410,180,1070,Rear Wheel Drive,Towbar possible,1600,5,56375
+VOLKSWAGEN,ID.3 Pro,58.0,7.3,160,350,166,450,Rear Wheel Drive,Towbar possible,0,5,46245
+HYUNDAI,IONIQ 6 Long Range 2WD,74.0,7.4,185,495,149,1290,Rear Wheel Drive,Towbar possible,1500,5,58611
+HYUNDAI,IONIQ 5 Long Range 2WD,74.0,7.3,185,390,190,1020,Rear Wheel Drive,Towbar possible,1600,5,58493
+PORSCHE,Macan 4 Electric,95.0,5.2,220,485,196,970,All Wheel Drive,Towbar possible,2000,5,86970
+HYUNDAI,IONIQ 5 N,80.0,3.4,260,385,208,950,All Wheel Drive,Towbar not possible,0,5,80990
+VOLKSWAGEN,ID.7 Pro,77.0,6.5,180,475,162,730,Rear Wheel Drive,Towbar possible,1000,5,69240
+KIA,EV9 99.8 kWh AWD,96.0,6.0,200,435,221,830,All Wheel Drive,Towbar possible,2500,7,39941
+VOLVO,EX30 Single Motor,49.0,5.7,180,275,178,420,Rear Wheel Drive,Towbar possible,1000,5,42108
+HYUNDAI,IONIQ 6 Long Range AWD,74.0,5.1,185,440,168,1150,All Wheel Drive,Towbar possible,1500,5,62972
+KIA,EV6 GT,74.0,3.5,260,360,206,940,All Wheel Drive,Towbar possible,1800,5,78055
+PEUGEOT,e-3008 98 kWh Long Range,98.0,8.9,170,510,192,660,Front Wheel Drive,Towbar possible,1200,5,64792
+PEUGEOT,e-3008 73 kWh,73.0,8.7,170,385,190,440,Front Wheel Drive,Towbar possible,1250,5,57129
+VOLKSWAGEN,ID. Buzz Pro,77.0,10.2,145,345,223,480,Rear Wheel Drive,Towbar possible,1000,5,73408
+HYUNDAI,IONIQ 5 Long Range AWD,74.0,5.1,185,385,192,1010,All Wheel Drive,Towbar possible,1600,5,62854
+HYUNDAI,IONIQ 5 Standard Range 2WD,54.0,8.5,185,295,183,720,Rear Wheel Drive,Towbar possible,750,5,54132
+KIA,EV6 Long Range AWD,74.0,5.2,185,400,185,1050,All Wheel Drive,Towbar possible,1600,5,64474
+VOLVO,EX30 Twin Motor Performance,64.0,3.6,180,335,191,560,All Wheel Drive,Towbar possible,1600,5,51079
+MINI,Countryman E,64.7,8.6,170,385,168,520,Front Wheel Drive,Towbar possible,750,5,52431
+VOLKSWAGEN,ID. Buzz LWB Pro S,86.0,8.0,160,370,232,470,Rear Wheel Drive,Towbar possible,0,7,80990
+VOLKSWAGEN,ID.7 Pro S,86.0,7.0,180,520,165,800,Rear Wheel Drive,Towbar not possible,0,5,73514
+KIA,EV9 99.8 kWh AWD GT-Line,96.0,5.3,200,425,226,810,All Wheel Drive,Towbar possible,2500,7,91263
+HYUNDAI,IONIQ 6 Standard Range 2WD,54.0,8.8,185,365,148,900,Rear Wheel Drive,Towbar possible,750,5,25639
+VOLVO,EX40 Single Motor ER,79.0,7.3,180,400,198,600,Rear Wheel Drive,Towbar possible,1500,5,59440
+VOLKSWAGEN,ID.7 Tourer Pro,77.0,6.6,180,460,167,710,Rear Wheel Drive,Towbar possible,1000,5,71022
+KIA,EV9 99.8 kWh RWD,96.0,9.4,185,450,213,850,Rear Wheel Drive,Towbar possible,900,7,80983
+PEUGEOT,e-208 50 kWh,46.3,9.0,150,290,160,460,Front Wheel Drive,Towbar not possible,0,5,40681
+VOLKSWAGEN,ID.7 Tourer GTX,86.0,6.0,180,480,179,770,All Wheel Drive,Towbar possible,0,5,80990
+HYUNDAI,Kona Electric 48 kWh,48.4,8.8,160,295,164,280,Front Wheel Drive,Towbar possible,300,5,43603
+PORSCHE,Macan Turbo Electric,95.0,3.3,260,480,198,960,All Wheel Drive,Towbar possible,2000,5,118370
+VOLKSWAGEN,ID.4 Pro 4MOTION,77.0,6.6,180,425,181,630,All Wheel Drive,Towbar possible,1200,5,29044
+VOLKSWAGEN,ID.7 Tourer Pro S,86.0,7.0,180,505,170,810,Rear Wheel Drive,Towbar possible,0,5,74760
+PEUGEOT,e-5008 73 kWh,73.0,9.0,170,370,197,430,Front Wheel Drive,Towbar possible,1000,7,59808
+PORSCHE,Taycan Plus,97.0,4.8,230,560,173,1230,Rear Wheel Drive,Towbar not possible,0,5,113328
+VOLKSWAGEN,ID.5 Pro,77.0,6.7,180,455,169,680,Rear Wheel Drive,Towbar possible,1000,5,63471
+KIA,EV6 Standard Range 2WD,54.0,8.5,185,305,177,750,Rear Wheel Drive,Towbar possible,750,5,24298
+PEUGEOT,e-2008 54 kWh,50.8,9.1,150,300,169,480,Front Wheel Drive,Towbar not possible,0,5,45292
+VOLKSWAGEN,ID.3 Pro S - 4 Seats,77.0,7.9,160,455,169,680,Rear Wheel Drive,Towbar possible,0,4,53416
+VOLKSWAGEN,ID. Buzz GTX,79.0,6.5,160,335,236,520,All Wheel Drive,Towbar possible,1800,5,87220
+PORSCHE,Taycan,82.3,4.8,230,485,170,1070,Rear Wheel Drive,Towbar not possible,0,5,107779
+PORSCHE,Taycan Turbo GT,97.0,2.3,290,475,204,1050,All Wheel Drive,Towbar not possible,0,5,232129
+PEUGEOT,e-308,50.8,9.8,170,300,169,450,Front Wheel Drive,Towbar not possible,0,5,52363
+VOLKSWAGEN,ID.4 Pure,52.0,9.0,160,285,182,360,Rear Wheel Drive,Towbar possible,1000,5,25134
+PEUGEOT,e-5008 98 kWh Long Range,98.0,9.7,170,490,200,640,Front Wheel Drive,Towbar possible,0,7,68530
+JAGUAR,I-Pace EV400,84.7,4.8,200,380,223,360,All Wheel Drive,Towbar possible,750,5,87213
+VOLKSWAGEN,ID.4 GTX,77.0,5.4,180,420,183,630,All Wheel Drive,Towbar possible,1200,5,67115
+VOLVO,EC40 Single Motor ER,79.0,7.3,180,420,188,630,Rear Wheel Drive,Towbar possible,1500,5,67664
+VOLKSWAGEN,ID.3 GTX,79.0,6.0,180,460,172,690,Rear Wheel Drive,Towbar not possible,0,4,58562
+PEUGEOT,e-208 51 kWh,48.1,8.2,150,310,155,480,Front Wheel Drive,Towbar not possible,0,5,40370
+KIA,e-Soul 64 kWh,64.0,7.9,167,370,173,350,Front Wheel Drive,Towbar possible,0,5,48687
+VOLVO,EX40 Single Motor,67.0,7.3,180,345,194,530,Rear Wheel Drive,Towbar possible,1500,5,57259
+VOLVO,EX40 Twin Motor,79.0,4.8,180,385,205,570,All Wheel Drive,Towbar possible,1800,5,72025
+VOLVO,EX90 Twin Motor,107.0,5.9,180,465,230,610,All Wheel Drive,Towbar possible,2200,7,119933
+MINI,Cooper E,36.8,7.3,160,230,160,350,Front Wheel Drive,Towbar not possible,0,4,37380
+PEUGEOT,e-308 SW,50.8,10.0,150,300,169,450,Front Wheel Drive,Towbar not possible,0,5,51397
+PEUGEOT,e-2008 50 kWh,46.3,9.9,150,270,171,430,Front Wheel Drive,Towbar not possible,0,5,21938
+PORSCHE,Taycan Turbo GT Weissach,97.0,2.2,305,475,204,1050,All Wheel Drive,Towbar not possible,0,2,232129
+VOLVO,EC40 Single Motor,67.0,7.3,180,360,186,560,Rear Wheel Drive,Towbar possible,1500,5,65483
+PORSCHE,Taycan 4S Plus,97.0,3.7,250,550,176,1210,All Wheel Drive,Towbar not possible,0,5,124844
+MINI,Countryman SE ALL4,64.7,5.6,180,370,175,500,All Wheel Drive,Towbar possible,1200,5,58786
+VOLVO,EX90 Twin Motor Performance,107.0,4.9,180,450,238,590,All Wheel Drive,Towbar possible,2200,7,125291
+VOLKSWAGEN,ID.5 GTX,77.0,5.5,180,430,179,640,All Wheel Drive,Towbar possible,1200,5,68984
+VOLKSWAGEN,ID.3 GTX Performance,79.0,5.6,200,460,172,690,Rear Wheel Drive,Towbar not possible,0,4,62300
+VOLVO,EC40 Twin Motor,79.0,4.8,180,400,198,600,All Wheel Drive,Towbar possible,1800,5,72025
+PEUGEOT,e-3008 73 kWh Dual Motor,73.0,6.4,180,380,192,440,All Wheel Drive,Towbar possible,1350,5,59808
+PORSCHE,Taycan 4S,82.3,3.7,250,475,173,1050,All Wheel Drive,Towbar not possible,0,5,119491
+VOLKSWAGEN,ID. Buzz LWB GTX,86.0,6.5,160,355,242,570,All Wheel Drive,Towbar possible,1600,7,90958
+VOLVO,EC40 Twin Motor Performance,79.0,4.6,180,400,198,600,All Wheel Drive,Towbar possible,1800,5,34075
+PORSCHE,Taycan Turbo S,97.0,2.4,260,500,194,1100,All Wheel Drive,Towbar not possible,0,5,201104
+VOLVO,EX40 Twin Motor Performance,79.0,4.6,180,380,208,570,All Wheel Drive,Towbar possible,1800,5,33237
+VOLVO,EX90 Single Motor,101.0,8.4,180,460,220,600,Rear Wheel Drive,Towbar possible,1200,7,46645
+PORSCHE,Taycan 4 Cross Turismo,97.0,4.7,220,505,192,1110,All Wheel Drive,Towbar not possible,0,5,120612
+PORSCHE,Taycan 4S Cross Turismo,97.0,3.8,240,505,192,1110,All Wheel Drive,Towbar not possible,0,5,125098
+PORSCHE,Taycan Turbo,97.0,2.7,260,520,187,1140,All Wheel Drive,Towbar not possible,0,5,167088
+KIA,e-Soul 39.2 kWh,39.2,9.9,157,230,170,200,Front Wheel Drive,Towbar not possible,0,5,40962
+PEUGEOT,e-5008 73 kWh Dual Motor,73.0,6.0,170,365,200,420,All Wheel Drive,Towbar possible,0,7,63546
+PORSCHE,Taycan Turbo S Cross Turismo,97.0,2.5,250,475,204,1050,All Wheel Drive,Towbar not possible,0,5,202475
+VOLKSWAGEN,ID. Buzz LWB Pro,77.0,7.9,160,335,230,460,Rear Wheel Drive,Towbar possible,0,7,77252
+PORSCHE,Taycan 4S Sport Turismo,82.3,3.7,250,430,191,950,All Wheel Drive,Towbar not possible,0,5,120488
+PORSCHE,Taycan Sport Turismo,82.3,4.8,230,445,185,980,Rear Wheel Drive,Towbar not possible,0,5,108775
+PORSCHE,Taycan Plus Sport Turismo,97.0,4.8,230,515,188,1130,Rear Wheel Drive,Towbar not possible,0,5,114325
+PORSCHE,Taycan Turbo S Sport Turismo,97.0,2.4,260,460,211,1010,All Wheel Drive,Towbar not possible,0,5,201976
+PORSCHE,Taycan 4S Plus Sport Turismo,97.0,3.7,250,495,196,1090,All Wheel Drive,Towbar not possible,0,5,125841
+PORSCHE,Taycan Turbo Sport Turismo,97.0,2.7,260,470,206,1030,All Wheel Drive,Towbar not possible,0,5,167960
+PORSCHE,Taycan Turbo Cross Turismo,97.0,2.8,250,495,196,1090,All Wheel Drive,Towbar not possible,0,5,168459
+MINI,Aceman E,38.5,7.9,160,230,167,370,Front Wheel Drive,Towbar not possible,0,5,39622
