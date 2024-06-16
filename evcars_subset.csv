@@ -1,0 +1,100 @@
+Brand,Model,Battery,Acceleration(0-100km/h) Time,Top_Speed,Range(km),Efficiency(Wh/km),Fastcharge,Drive_Configuration,Tow_Hitch,Towing_capacity_in_kg,Number_of_seats,Estimated_US_Value
+TESLA,Model 3,57.5,6.1,201,415,139,690,Rear Wheel Drive,Towbar possible,1000,5,49827
+TESLA,Model Y,57.5,6.9,217,350,164,580,Rear Wheel Drive,Towbar possible,1600,5,56057
+TESLA,Model Y Long Range Dual Motor,75.0,5.0,217,435,172,670,All Wheel Drive,Towbar possible,1600,5,66025
+TESLA,Model 3 Long Range Dual Motor,75.0,4.4,201,500,150,770,All Wheel Drive,Towbar possible,1000,5,62287
+TESLA,Model Y Long Range RWD,75.0,5.9,217,460,163,710,Rear Wheel Drive,Towbar possible,1600,5,27927
+TESLA,Model Y Performance,75.0,3.8,250,415,181,640,All Wheel Drive,Towbar possible,1600,5,74747
+BMW,i4 eDrive40,80.7,5.7,190,515,157,800,Rear Wheel Drive,Towbar possible,1600,5,72130
+BMW,iX xDrive40,71.0,6.1,200,360,197,480,All Wheel Drive,Towbar possible,2500,5,87101
+TESLA,Model S Plaid,95.0,2.3,282,560,170,780,All Wheel Drive,Towbar possible,1600,5,124600
+TESLA,Model S Dual Motor,95.0,3.2,250,575,165,800,All Wheel Drive,Towbar possible,1600,5,105910
+TESLA,Model 3 Performance,75.0,3.2,262,455,165,700,All Wheel Drive,Towbar not possible,0,5,74747
+BMW,iX3,74.0,6.8,180,385,192,520,Rear Wheel Drive,Towbar possible,750,5,79949
+BMW,iX1 xDrive30,64.7,5.6,180,380,170,510,All Wheel Drive,Towbar possible,1200,5,59141
+AUDI,Q6 e-tron quattro,94.9,5.9,210,460,206,920,All Wheel Drive,Towbar possible,2400,5,85942
+TOYOTA,bZ4X FWD,64.0,7.5,160,340,188,510,Front Wheel Drive,Towbar possible,750,5,57453
+BMW,i4 M50,80.7,3.9,225,450,179,700,All Wheel Drive,Towbar possible,1600,5,88571
+ROLLS-ROYCE,Spectre,102.0,4.5,250,465,219,540,All Wheel Drive,Towbar not possible,0,4,411180
+NISSAN,Leaf,39.0,7.9,144,235,166,230,Front Wheel Drive,Towbar not possible,0,5,36127
+BMW,i7 xDrive60,101.7,4.7,240,510,199,760,All Wheel Drive,Towbar possible,2000,5,142006
+BMW,i4 eDrive35,67.0,6.0,190,430,156,580,Rear Wheel Drive,Towbar possible,1600,5,62293
+MERCEDES-BENZ,EQB 250+,70.5,8.9,160,415,170,490,Front Wheel Drive,Towbar possible,1400,7,65788
+AUDI,Q4 e-tron 45,77.0,6.7,180,420,183,630,Rear Wheel Drive,Towbar possible,1000,5,63228
+AUDI,Q8 e-tron 55 quattro,106.0,5.6,200,505,210,640,All Wheel Drive,Towbar possible,1800,5,96938
+NISSAN,Ariya 87kWh,87.0,7.6,160,450,193,540,Front Wheel Drive,Towbar possible,750,5,55627
+FORD,Mustang Mach-E ER RWD,91.0,7.0,180,480,190,420,Rear Wheel Drive,Towbar possible,1500,5,74548
+BMW,iX xDrive50,105.2,4.6,200,505,208,680,All Wheel Drive,Towbar possible,2500,5,128032
+BMW,iX1 eDrive20,64.7,8.3,170,390,166,520,Front Wheel Drive,Towbar possible,750,5,56649
+MERCEDES-BENZ,EQA 250,66.5,8.6,160,395,168,570,Front Wheel Drive,Towbar possible,1500,5,53823
+MERCEDES-BENZ,EQS 450+,108.4,6.1,210,635,171,950,Rear Wheel Drive,Towbar possible,750,5,62972
+BMW,i5 eDrive40 Sedan,81.2,6.0,193,470,173,750,Rear Wheel Drive,Towbar possible,1500,5,92334
+TESLA,Model X Dual Motor,95.0,3.9,250,475,200,660,All Wheel Drive,Towbar possible,2250,7,130830
+MERCEDES-BENZ,EQV 300 Long,90.0,12.1,160,315,286,320,Front Wheel Drive,Towbar not possible,0,7,49511
+MERCEDES-BENZ,EQE 350+,90.6,6.4,210,530,171,790,Rear Wheel Drive,Towbar possible,750,5,45825
+BMW,i5 M60 xDrive Sedan,81.2,3.8,230,420,193,670,All Wheel Drive,Towbar possible,2000,5,121790
+TOYOTA,bZ4X AWD,64.0,6.9,160,315,203,470,All Wheel Drive,Towbar possible,750,5,65427
+BMW,iX2 xDrive30,64.7,5.6,180,380,170,510,All Wheel Drive,Towbar possible,1200,5,71576
+FORD,Explorer Extended Range AWD,79.0,5.3,180,430,184,690,All Wheel Drive,Towbar possible,1200,5,67252
+TESLA,Model X Plaid,95.0,2.7,262,455,209,630,All Wheel Drive,Towbar possible,2250,7,149520
+MERCEDES-BENZ,EQE 300,89.0,7.3,210,525,170,660,Rear Wheel Drive,Towbar possible,750,5,85737
+NISSAN,Leaf e+,59.0,6.9,157,340,174,240,Front Wheel Drive,Towbar not possible,0,5,43566
+MERCEDES-BENZ,EQB 350 4MATIC,66.5,6.2,160,345,193,500,All Wheel Drive,Towbar possible,1700,7,70785
+MERCEDES-BENZ,EQA 250+,70.5,8.6,160,420,168,500,Front Wheel Drive,Towbar possible,1500,5,61988
+FORD,Mustang Mach-E ER AWD,91.0,5.8,180,445,204,390,All Wheel Drive,Towbar possible,1500,5,81494
+AUDI,Q8 e-tron Sportback 55 quattro,106.0,5.6,200,525,202,660,All Wheel Drive,Towbar possible,1800,5,100053
+MERCEDES-BENZ,EQS 580 4MATIC,108.4,4.3,210,590,184,880,All Wheel Drive,Towbar possible,750,5,97109
+BMW,iX M60,105.2,3.8,250,485,217,650,All Wheel Drive,Towbar possible,2500,5,152977
+BMW,iX2 eDrive20,64.7,8.6,170,395,164,530,Front Wheel Drive,Towbar possible,750,5,64312
+AUDI,Q8 e-tron 50 quattro,89.0,6.0,200,425,209,660,All Wheel Drive,Towbar possible,1800,5,84478
+NISSAN,Ariya 63kWh,63.0,7.5,160,335,188,450,Front Wheel Drive,Towbar possible,750,5,49397
+AUDI,Q4 e-tron 55 quattro,77.0,5.4,180,395,195,590,All Wheel Drive,Towbar possible,1200,5,71177
+MERCEDES-BENZ,EQB 300 4MATIC,66.5,8.0,160,345,193,500,All Wheel Drive,Towbar possible,1700,7,34289
+FORD,Mustang Mach-E SR RWD,72.6,7.3,180,380,191,460,Rear Wheel Drive,Towbar possible,750,5,63334
+AUDI,Q4 Sportback e-tron 45,77.0,6.7,180,435,177,650,Rear Wheel Drive,Towbar possible,1000,5,65097
+AUDI,SQ6 e-tron,94.9,4.3,230,445,213,890,All Wheel Drive,Towbar possible,2400,5,115815
+BMW,i7 eDrive50,101.7,5.5,205,520,196,780,Rear Wheel Drive,Towbar not possible,0,5,124855
+AUDI,Q4 e-tron 45 quattro,77.0,6.6,180,395,195,590,All Wheel Drive,Towbar possible,1200,5,65010
+BMW,i5 eDrive40 Touring,81.2,6.1,193,455,178,730,Rear Wheel Drive,Towbar possible,1500,5,87151
+MERCEDES-BENZ,EQS 450 4MATIC,108.4,5.6,210,610,178,910,All Wheel Drive,Towbar possible,750,5,65338
+MERCEDES-BENZ,EQS SUV 450+,118.0,6.8,210,540,219,680,Rear Wheel Drive,Towbar possible,750,7,70069
+FORD,Mustang Mach-E GT,91.0,3.7,200,425,214,380,All Wheel Drive,Towbar possible,750,5,92876
+BMW,i7 M70 xDrive,101.7,3.7,250,490,208,730,All Wheel Drive,Towbar not possible,0,5,203490
+MERCEDES-BENZ,EQS SUV Maybach 680,118.0,4.4,210,490,241,620,All Wheel Drive,Towbar possible,1800,4,249200
+NISSAN,Townstar EV Passenger,45.0,12.6,132,225,200,230,Front Wheel Drive,Towbar possible,1500,5,42389
+AUDI,SQ8 e-tron,106.0,4.5,210,455,233,570,All Wheel Drive,Towbar possible,1800,5,121485
+FORD,Explorer Standard Range RWD,52.0,9.0,160,280,186,350,Rear Wheel Drive,Towbar possible,1000,5,49684
+MERCEDES-BENZ,EQS SUV 580 4MATIC,118.0,4.7,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,173779
+MERCEDES-BENZ,EQE SUV 350 4MATIC,90.6,6.6,210,435,208,550,All Wheel Drive,Towbar possible,1800,5,55357
+BMW,i5 xDrive40 Sedan,81.2,5.4,215,455,178,730,All Wheel Drive,Towbar possible,2000,5,44819
+NISSAN,Ariya e-4ORCE 87kWh - 225 kW,87.0,5.7,200,405,215,480,All Wheel Drive,Towbar possible,1500,5,63352
+MERCEDES-BENZ,EQE 350 4MATIC,89.0,6.3,210,510,175,640,All Wheel Drive,Towbar possible,750,5,48191
+MERCEDES-BENZ,EQS AMG 53 4MATIC+,108.4,3.4,250,535,203,800,All Wheel Drive,Towbar possible,750,5,97109
+AUDI,Q4 Sportback e-tron 55 quattro,77.0,5.4,180,415,186,620,All Wheel Drive,Towbar possible,1200,5,73046
+MERCEDES-BENZ,EQS SUV 450 4MATIC,118.0,6.1,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,161319
+MERCEDES-BENZ,EQA 300 4MATIC,66.5,7.7,160,350,190,500,All Wheel Drive,Towbar possible,1800,5,32938
+NISSAN,Ariya e-4ORCE 87kWh - 290 kW,87.0,5.1,200,405,215,480,All Wheel Drive,Towbar possible,1500,5,36307
+MERCEDES-BENZ,EQE 350,89.0,6.4,210,515,173,650,Rear Wheel Drive,Towbar possible,750,5,96371
+MERCEDES-BENZ,EQE SUV 350+,96.0,6.9,210,475,202,660,Rear Wheel Drive,Towbar possible,750,5,51368
+MERCEDES-BENZ,EQE AMG 43 4MATIC,90.6,4.2,210,450,201,670,All Wheel Drive,Towbar possible,750,5,62049
+FORD,Mustang Mach-E SR AWD,72.6,6.2,180,350,207,430,All Wheel Drive,Towbar possible,750,5,33184
+MERCEDES-BENZ,EQS 500 4MATIC,108.4,4.8,210,590,184,880,All Wheel Drive,Towbar possible,750,5,81223
+MERCEDES-BENZ,EQE SUV 500 4MATIC,96.0,4.9,210,455,211,630,All Wheel Drive,Towbar possible,1800,5,65226
+MERCEDES-BENZ,EQE AMG 53 4MATIC+,90.6,3.5,220,450,201,670,All Wheel Drive,Towbar possible,750,5,142978
+BMW,i5 M60 xDrive Touring,81.2,3.9,230,415,196,670,All Wheel Drive,Towbar possible,2000,5,124593
+MERCEDES-BENZ,EQA 350 4MATIC,66.5,6.0,160,350,190,500,All Wheel Drive,Towbar possible,1800,5,67919
+AUDI,Q4 Sportback e-tron 45 quattro,77.0,6.6,180,415,186,620,All Wheel Drive,Towbar possible,1200,5,66879
+MERCEDES-BENZ,EQE 500 4MATIC,90.6,4.7,210,505,179,750,All Wheel Drive,Towbar possible,750,5,63401
+MERCEDES-BENZ,EQT 200 Standard,45.0,12.6,132,225,200,230,Front Wheel Drive,Towbar possible,1500,5,26677
+MERCEDES-BENZ,EQE SUV 300,90.6,7.6,210,450,201,570,Rear Wheel Drive,Towbar possible,750,5,46636
+AUDI,SQ8 e-tron Sportback,106.0,4.5,210,480,221,610,All Wheel Drive,Towbar possible,1800,5,124600
+MERCEDES-BENZ,EQE SUV AMG 53 4MATIC+,90.6,3.5,240,410,221,610,All Wheel Drive,Towbar possible,1800,5,83680
+AUDI,Q8 e-tron Sportback 50 quattro,89.0,6.0,200,445,200,690,All Wheel Drive,Towbar possible,1800,5,87593
+MERCEDES-BENZ,EQS SUV 500 4MATIC,118.0,5.3,210,530,223,670,All Wheel Drive,Towbar possible,1800,7,82778
+MERCEDES-BENZ,eVito Tourer Long 90 kWh,90.0,12.1,160,320,281,320,Front Wheel Drive,Towbar not possible,0,8,47359
+MERCEDES-BENZ,EQE SUV AMG 43 4MATIC,90.6,4.3,210,415,218,620,All Wheel Drive,Towbar possible,1800,5,73067
+MERCEDES-BENZ,EQV 250 Extra-Long,60.0,12.0,160,210,286,200,Front Wheel Drive,Towbar not possible,0,7,80790
+MERCEDES-BENZ,EQV 250 Long,60.0,12.0,160,215,279,200,Front Wheel Drive,Towbar not possible,0,7,79798
+MERCEDES-BENZ,eVito Tourer Long 60 kWh,60.0,12.0,160,220,273,210,Front Wheel Drive,Towbar not possible,0,8,72501
+MERCEDES-BENZ,eVito Tourer Extra-Long 60 kWh,60.0,12.0,160,215,279,200,Front Wheel Drive,Towbar not possible,0,8,73467
+FORD,Explorer Extended Range RWD,77.0,6.4,180,430,179,640,Rear Wheel Drive,Towbar possible,1000,5,57160
