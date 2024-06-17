@@ -68,24 +68,24 @@ class EVcars():
         self.noti_labl.grid(row=0, column=0, columnspan=2, pady=10, ipadx=5, ipady=5)
         # 
         #  
-        self.load_btn = Button(self.start_frame, anchor="w", text="Load file",image=self.load_ico, compound="left", width=125, height=25, activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
+        self.load_btn = Button(self.start_frame, text=" Load file",image=self.load_ico, compound="left", width=125, height=25, relief="groove", overrelief="raised", activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
         self.load_btn.grid(row=1, column=0, pady=5, ipadx=5, ipady=5)
         # self.load_btn.bind("<Enter>", lambda event: self.hover_btn(self.load_btn, event))
 
-        Button(self.start_frame, text="Show Cars Info", activebackground="lightblue",image=shows_info_ico, compound="left", width=125, height=25, command=self.show_Info, bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), cursor="hand2").grid(row=2, column=0, pady=20, ipadx=5, ipady=5)
+        Button(self.start_frame, text=" Show Cars Info", activebackground="lightblue",image=shows_info_ico, compound="left", width=129, height=25, command=self.show_Info, bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), cursor="hand2").grid(row=2, column=0, pady=20, ipadx=5, ipady=5)
 
-        Button(self.start_frame, activebackground="lightblue", text="More..", image=options_ico, compound="left",  bg="lightblue", width=125, height=25, command=self.explore_Info, fg="black", font=('Consolas', 11, 'bold'), cursor="hand2").grid(row=3, column=0, pady=20, ipadx=5, ipady=5)
+        Button(self.start_frame, activebackground="lightblue", text=" More..", image=options_ico, compound="left",  bg="lightblue", width=125, height=25, command=self.explore_Info, fg="black", font=('Consolas', 11, 'bold'), cursor="hand2").grid(row=3, column=0, pady=20, ipadx=5, ipady=5)
 
         self.warn_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/error.png"))
-        self.info_labl = Label(self.start_frame, text='', fg="red", bg="lightgrey")
+        self.info_labl = Label(self.start_frame, text='', fg="red", bg="lightgrey", font=('Consolas', 11))
         self.info_labl.grid(row=4, column=0, sticky=S)  # Adjust row as needed
 
         quit_ico = PhotoImage(file="./Project/frame_logo/door.png")
-        Button(self.start_frame, text="Quit", image=quit_ico, compound="left", width=60, height=25, activebackground="lightblue", bg="lightblue", activeforeground="red", font=('Consolas', 11, 'bold'), command=self.ask_confirm, cursor="hand2").grid(row=5, column=0, pady=10)
+        Button(self.start_frame, text=" Quit", image=quit_ico, compound="left", width=60, height=25, activebackground="lightblue", bg="lightblue", activeforeground="red", font=('Consolas', 11, 'bold'), command=self.ask_confirm, cursor="hand2").grid(row=5, column=0, pady=10)
 
         gp_name_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/gp_name_box.png").resize((570, 75)))
-        Label(self.start_frame, text="Presented by Team-3 (The Python Ninjas)", image=gp_name_box, compound="center", font=('', 12, "bold"), bg="lightgrey").grid(row=6, column=0, sticky='ws')
-        
+        Label(self.start_frame, text="Presented by Team-3 (The Python Ninjas)", image=gp_name_box, compound="center", font=('Helvectica', 12, "bold"), bg="lightgrey").grid(row=6, column=0, sticky='ws')
+    
         self.back_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/back_ico.png"))
         self.save_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/save.png"))
         self.cancel_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/undo.png"))
@@ -130,7 +130,7 @@ class EVcars():
             noti_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/checked.png"))
 
             self.noti_labl.config(image=noti_box, text=f"{self.file.split('/')[-1]} is loaded.", compound="left", fg="green")
-            self.load_btn.config(image=self.load_ico, text="Load Another File", width=145)
+            self.load_btn.config(image=self.load_ico, text=" Load Another File", width=150)
 
             with open(self.file, newline='') as file:
                 csv_reader = csv.reader(file)
@@ -224,7 +224,7 @@ class EVcars():
             self.display_frame = Frame(self.window)
             self.display_frame.grid(row=0, column=0, sticky="nsew")
 
-            back_btn = Button(self.display_frame, image=self.back_ico, text="Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.display_frame.destroy(), self.dis_menu(" Home ")])
+            back_btn = Button(self.display_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.display_frame.destroy(), self.dis_menu(" Home ")])
             # 13/6/24 removed show datas button
             # open_btn = Button(self.display_frame, relief="sunken", text="Show datas", bg="blue", fg="white", command=self.display_info)
             back_btn.pack(anchor=W, padx=10, pady=10)
@@ -253,6 +253,7 @@ class EVcars():
             style = ttk.Style()
             style.theme_use('default')  # try with different theme ('clam', etc..)
             style.configure('Treeview.Heading', background="skyblue", rowheight=20)
+        
             # show_window.mainloop()
         else:
             self.info_labl.config(image=self.warn_box, text=f"\nYour data is {'invalid' if self.datas else 'empty'}.\nFile is not loaded yet!", compound="top", fg="red")
@@ -301,7 +302,7 @@ class EVcars():
             self.fst_half = self.datas[0][:self.num+1]  # to display more in 1st half
             self.scd_half = self.datas[0][self.num+1:]
 
-            self.search_frame = Frame(self.window)
+            self.search_frame = Frame(self.window, background="lightgrey")
             self.search_frame.grid(row=0, column=0, sticky="nsew")
             self.search_frame.columnconfigure(0, weight=1)
 
@@ -322,7 +323,7 @@ class EVcars():
             for i in range(len(self.scd_half)+1): # add 1 to add image entry
                 # to add image
                 if i == len(self.scd_half):
-                    Label(self.frame1, text="Image : ", background="lightblue").grid(row=i, column=10, padx=30, pady=5, sticky=W)
+                    Label(self.frame1, text="Image path: ", background="lightblue").grid(row=i, column=10, padx=30, pady=5, sticky=W)
                     self.img_e = Entry(self.frame1, font=("Consolas", 12))
                     # self.img_e.insert(END, "car.png")
                     self.img_e.grid(row=i, column=11, columnspan=5, pady=5, ipadx=5)
@@ -343,7 +344,7 @@ class EVcars():
             # self.hist_lst = [] # to store what we type in entry as list   # origin (we moved them cuz destroying widget also delete them)
             
             # self.option_lst = ["<< Back", "Search", "Add", "Edit", "*Delete", "**Delete All"] 1st usage
-            btn_frame = Frame(self.search_frame)
+            btn_frame = Frame(self.search_frame, bg="lightgrey")
             btn_frame.grid(row=10, column=0, sticky="ns")
 
             opt = ["./Project/frame_logo/back_ico.png", "./Project/frame_logo/search.png", "./Project/frame_logo/add.png", "./Project/frame_logo/update.png", "./Project/frame_logo/delete.png"]
@@ -351,7 +352,7 @@ class EVcars():
             for i in opt:
                 opt_img.append(ImageTk.PhotoImage(Image.open(i)))
 
-            self.option_lst = ["Back", "Search", "Add", "Update", "Delete"]
+            self.option_lst = [" Back", " Search", " Add", " Update", " Delete"]
             self.btns = [] ## not used yet
             for i, opt in enumerate(self.option_lst):
                 btn = Button(btn_frame, image=opt_img[i], text=opt, compound="left", fg="black", bg="lightblue", activebackground="lightblue", font=('Consolas', 11, 'bold'), command=lambda a=i: self.process_button(a)) # I will go with i instead of opt
@@ -395,6 +396,10 @@ class EVcars():
 
             self.tree_search.config(yscrollcommand=yscroll.set, xscrollcommand=xscroll.set)
 
+            # set heading row color
+            style = ttk.Style()
+            style.theme_use('default')  # try with different theme ('clam', etc..)
+            style.configure('Treeview.Heading', background="skyblue", rowheight=20)
             # print(self.entries)
             # print(self.btns)
             # print(self.val_lst)
@@ -610,8 +615,34 @@ class EVcars():
                 else:
                     # self.txt_area.insert(END, f"Your data is added as\n\n {', '.join(word.strip() for word in self.datas[0])}\n", "success")
                     # self.txt_area.insert(END, f" {', '.join(item for item in add_list)}", "success")
+
+                    # add just existing brand's models img
+                    add_path = self.img_e.get()
+                    add_img = add_list[1]+".png"  #eg / -> model.png
+                    brand_path = "./Project/brands/"
+                    model_path = "./Project/models/"+add_list[0].lower()+"/"
+
                     response = messagebox.askokcancel("Add", "Are you sure to add this data?")
                     if response:
+                        # adding image
+                        if add_list[0].lower() in [brand[:-4] for brand in os.listdir(brand_path)]:
+                            try:
+                                Image.open(add_path).save(model_path+add_img)
+                            except:
+                                if "suv" in add_img[:-4]:
+                                    Image.open("./Project/frame_logo/suv.png").save(model_path+add_img)
+                                else:
+                                    Image.open("./Project/frame_logo/car.png").save(model_path+add_img)
+                        else:
+                            Image.open("./Project/frame_logo/unknown.png").save(brand_path+add_list[0].lower()+".png") # here I also use added img as brand logo
+                            try:
+                                Image.open(add_path).save(model_path+add_img)
+                            except:
+                                if "suv" in add_img[:-4]:
+                                    Image.open("./Project/frame_logo/suv.png").save(model_path+add_img)
+                                else:
+                                    Image.open("./Project/frame_logo/car.png").save(model_path+add_img)
+
                         self.datas.append(add_list)
                         self.save_datas()
                         self.show_txt.config(fg="green")
@@ -1032,7 +1063,7 @@ class EVcars():
             self.cars_img = [img for img in os.listdir(brands_path)]
 
             self.ico_frame = Frame(self.brands_main_frame, background="skyblue", relief="raised")
-            self.ico_frame.grid(row=1, column=0, columnspan=10, rowspan=10, ipadx=10, ipady=100, padx=150, sticky="n")
+            self.ico_frame.grid(row=1, column=0, sticky="n")# columnspan=10, rowspan=10, ipadx=10, ipady=100, padx=150, 
 
             # names = [name.split("/")[-1][:-4].upper() for name in self.cars_img]
             names = [name[:-4].upper() for name in self.cars_img]
@@ -1224,7 +1255,7 @@ class EVcars():
         self.edit_frame1.rowconfigure(17, weight=0)
 
 
-        self.edit_frame2 = Frame(self.edit_frame1, background="lightblue",borderwidth=10)
+        self.edit_frame2 = Frame(self.edit_frame1, background="lightblue",relief="solid")
         self.edit_frame2.grid(row=0, rowspan=9, column=0, padx=10, pady=20, columnspan=20, ipadx=100)#,sticky="we")#, 
         
         # value = StringVar()
@@ -1239,7 +1270,7 @@ class EVcars():
         for i in range(len(self.scd_half)+1):
             # image entry
             if i == len(self.scd_half):
-                Label(self.edit_frame2, text="Image : ", background="lightblue").grid(row=i, column=10, padx=30, pady=5, sticky=W)
+                Label(self.edit_frame2, text="Image path: ", background="lightblue").grid(row=i, column=10, padx=30, pady=5, sticky=W)
                 self.img_e = Entry(self.edit_frame2, font=("Consolas", 12))
                 self.img_e.insert(END, f"{self.selected_lst[1]}.png")
                 self.img_e.grid(row=i, column=11, columnspan=5, pady=5, ipadx=5)
@@ -1254,9 +1285,9 @@ class EVcars():
         btn_frame = Frame(self.edit_frame1)
         btn_frame.grid(row=10, column=0, sticky="ns")
 
-        Button(btn_frame, image=self.back_ico, text="Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.search_frame.tkraise(), self.edit_frame1.destroy()])\
+        Button(btn_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.search_frame.tkraise(), self.edit_frame1.destroy()])\
         .grid(row=1, column= 0, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
-        Button(btn_frame, image=self.save_ico, text="Save", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.update).grid(row=1, column=10, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
+        Button(btn_frame, image=self.save_ico, text=" Save", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.update).grid(row=1, column=2, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
     
     def update(self):
 
@@ -1264,19 +1295,42 @@ class EVcars():
         for e in self.entries1:
             self.modified_lst.append(e.get())
 
-        # to edit image( optional )     need to test and modify
-        # model_img = self.img_e.get()
-        # # ori_brand_img = [img for img in os.listdir("./Project/brands") if img == self.selected_lst[0].lower()+".png"]
-        # ori_model_img = [img for img in os.listdir("./Project/models/"+self.selected_lst[0].lower()) if img == self.selected_lst[1]+".png"]
-        # if model_img not in [model for model in os.listdir("./Project/models")]:
-        #     # os.mkdir("./Project/"+self.modified_lst[0].lower())
-        #     img = Image.open(model_img)
-        #     img.save("./Project/models/"+self.selected_lst[0].lower()+"/"+img)
-        #     os.remove(ori_model_img)
+        try:
+            # to edit image( optional )     need to test and modify
+            model_path = self.img_e.get()
+            model_name = self.img_e.get().split("/")[-1]
+            # ori_brand_img = [img for img in os.listdir("./Project/brands") if img == self.selected_lst[0].lower()+".png"]
+            img_path = "./Project/models/"+self.selected_lst[0].lower()
+            ori_model_img = [img for img in os.listdir(img_path) if img == self.selected_lst[1]+".png"]
+            
+            if model_name not in [model for model in os.listdir("./Project/models/"+self.selected_lst[0].lower())]:
+                if not os.path.exists("./Project/del_imgs"):
+                    os.mkdir("./Project/del_imgs")
+                else:
+                    pass
+                print(model_name)
+                print("Not in models")
+                Image.open(img_path+"/"+ori_model_img[0]).save("./Project/del_imgs/"+ori_model_img[0])
+                os.remove(img_path+"/"+ori_model_img[0])
+                try:
+                    Image.open(model_path+"/" + model_name).save(img_path+"/"+model_name)
+                    # img.save(img_path+"/"+img)  
+                    # print(img.show())             
+                except:
+                    if "suv" in model_name[:-4]:
+                        Image.open("./Project/frame_logo/suv.png").save(img_path+"/"+"suv.png")
+                    else:
+                        Image.open("./Project/frame_logo/car.png").save(img_path+"/"+"car.png")
+                    # img.save(img_path+"/"+img)
+                    # print(img.show())
+            else:
+                print("Model's image wasn't changed.")
+        except:
+            pass
 
 
 
-        frame2 = Frame(self.edit_frame1, background="coral", borderwidth=1)
+        frame2 = Frame(self.edit_frame1, background="lightgrey", relief="solid", borderwidth=1)
         frame2.grid(row=17, column=0, columnspan=30, rowspan=8, padx=30, ipadx=3, ipady=3, sticky="nswe")
         # # frame2.grid_propagate()
         frame2.columnconfigure(1, weight=1)
@@ -1294,10 +1348,10 @@ class EVcars():
         else:
         # self.show_txt = Entry(frame2, borderwidth=2, font=("Consolas", 12), justify="center")
         # self.show_txt.grid(row=0, column=0, sticky="we")#, ipady=5, ipadx=350)
-            Button(frame2, image=self.cancel_ico, text="Cancel", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=frame2.destroy).grid(row=0, column=1, padx=25, ipadx=5, ipady=5, sticky=NW)
-            Button(frame2, image=self.confirm_ico, text="Confirm", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.notify).grid(row=0, column=1, padx=5, ipadx=5, ipady=5, sticky=NE)
+            Button(frame2, image=self.cancel_ico, text=" Cancel", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=frame2.destroy).grid(row=0, column=1, padx=25, ipadx=5, ipady=5, sticky=NW)
+            Button(frame2, image=self.confirm_ico, text=" Confirm", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.notify).grid(row=0, column=1, padx=5, ipadx=5, ipady=5, sticky=NE)
 
-            self.edit_info = Text(frame2, wrap=None, font=("Consolas", 12), height=12, background="lightgrey", relief="solid", borderwidth=2)
+            self.edit_info = Text(frame2, wrap=None, font=("Consolas", 12), height=12, relief="solid", borderwidth=1)
             self.edit_info.grid(row=1, column=1, sticky="nsew")
             yscroll= Scrollbar(frame2, orient="vertical", relief="solid", borderwidth=2, command=self.edit_info.yview, activebackground="skyblue")
             yscroll.grid(row=1, column=2, sticky=E+NS)
@@ -1339,13 +1393,24 @@ class EVcars():
         self.selected_lst.clear()
         selected_lines = self.tree_search.selection()
         for x in selected_lines:
-            lst = [*self.tree_search.item(x, "values")]
+            lst = [*self.tree_search.item(x, "values")] # unpacked it as it returns tuple
+            print(lst)
             self.selected_lst.append(lst)
-
+        
         response = messagebox.askyesno("Checking!",f"You selected {len(self.selected_lst)} rows to delete.\n Are you sure to delete?")
         if response:
             for x in self.selected_lst:
                 self.datas.remove(x)
+
+                # to delete images
+                model_path = "./Project/models/"+x[0].lower()+"/"+x[1]+".png"
+
+                if not os.path.exists("./Project/del_imgs"):
+                    os.mkdir("./Project/del_imgs")
+                else:
+                    pass
+                Image.open(model_path).save("./Project/del_imgs/"+x[0].lower()+"/"+x[1]+".png")
+                os.remove(model_path)               
 
             self.hist_dict["Delected"] = [x for x in self.selected_lst] 
             self.save_datas()
