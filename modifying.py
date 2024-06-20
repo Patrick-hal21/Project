@@ -4,6 +4,7 @@ from tkinter import ttk  # for Treeview
 from tkinter import filedialog
 from tkinter import messagebox
 from PIL import Image, ImageTk, ImageSequence # to manipulate images
+import pygame # to play music
 import os
 import csv
 import ctypes
@@ -28,15 +29,18 @@ class EVcars():
         self.window.title("Ninjas EV Info Management System")
         self.window.iconphoto(True, icon) #set True to set that icon in all self.window & its descendents ,and to be changeabl later
         self.window.geometry("800x600")
-
         self.window.config(bg="lightgrey")
+
         # created file, load_btn to load file and store it to use in other windows without repeating load_file 
         self.file = None 
-        self.datas = None
+        self.ori_data = None
+        self.datas = None # sry for spelling error (self.data is correct)
 
         self.hist_dict = {} # to store what we type in entry as list # modified place
         self.val_lst = [] # I moved it here
         
+        self.window.bind("<Double-Button-1>", self.chg_option)
+
         self.frame_index = 0
 
         self.window.columnconfigure(0, weight=1)
@@ -45,7 +49,9 @@ class EVcars():
         # self.main_frame.grid(row=0, column=0, sticky="nsew")
         # self.main_frame.columnconfigure(0, weight=1)
         # self.main_frame.rowconfigure(0, weight=1)
-        
+
+        pygame.mixer.init()
+        pygame.mixer.music.load("./Project/bg_music/m1.mp3") # to add bg music in home page
         self.home()
         # self.createWidgets() #top menu
         # self.menuBar.entryconfig(" Home ", state=DISABLED)
@@ -59,6 +65,7 @@ class EVcars():
         # self.start_frame.pack(fill=BOTH, expand=True)
         self.start_frame.grid(row=0, column=0, sticky="nsew")
 
+        # self.start_frame.bind("<Button-3>", self.chg_option)
 
         self.start_frame.columnconfigure(0, weight=1)
         self.start_frame.rowconfigure(6, weight=1)
@@ -209,11 +216,15 @@ class EVcars():
             noti_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/checked.png"))
 
             self.noti_labl.config(image=noti_box, text=f"{self.file.split('/')[-1]} is loaded.", compound="left", fg="green")
-            self.load_btn.config(image=self.load_ico, text=" Load Another File", width=150)
+            self.load_btn.config(image=self.load_ico, text=" Load Another File", width=170)
+
+            with open(self.file, newline='') as file:
+                csv_reader = csv.reader(file) # one csvreader can be read one time
+                self.datas = [row for row in csv_reader]
 
             with open(self.file, newline='') as file:
                 csv_reader = csv.reader(file)
-                self.datas = [row for row in csv_reader]
+                self.ori_data =  [row for row in csv_reader] # to use to reset data
 
             self.sorted_data = sorted(self.datas[1:], key=lambda a: (a[0], a[1])) # sorted data
             # print(self.datas)
@@ -274,18 +285,53 @@ class EVcars():
         show_frame.columnconfigure(0, weight=1)
         show_frame.rowconfigure(0, weight=1)
 
-        img_label = Label(show_frame, image=img, cursor="hand2")
-        img_label.bind("<Button-1>", lambda event: [ self.createWidgets(), self.start_page()])
-        img_label.place(x=0, y=0, relheight=1, relwidth=1)
+        self.play() # play bg music
+        # img_label = Label(show_frame, image=img, cursor="hand2")
 
-        Label(show_frame, text="Welcome!", font=("Helvectica", 35), borderwidth=0, fg="blue", bg="white").grid(row=0, column=0, sticky=N)
-        Label(show_frame, text="Click to start...", font=("", 20), borderwidth=0, fg='blue', bg='white').grid(row=0, column=0, sticky=S)
+        # whale circling bg="#0A71E0"
+        # a_img = Image.open("./Project/gif/home_screen.gif")
+        # frames = ImageSequence.Iterator(a_img)
+        # img_label = Label(show_frame, cursor="hand2")
+        # self.window.after(50, lambda: self.animate_home(img_label, frames, a_img))
+        # img_label.bind("<Button-1>", lambda event: [ self.createWidgets(), self.start_page()])
+        # img_label.place(x=0, y=0, relheight=1, relwidth=1)
+        # Label(show_frame, text="Welcome", font=("Helvectica", 35), borderwidth=0, bg="#0A71E0").grid(row=0, column=0, sticky=N)
+        
+
+        # evcar bg ="#D6FCEE", moving car bg =#8A51E6
+        a_img = Image.open("./Project/gif/moving car.gif")
+        frames = ImageSequence.Iterator(a_img)
+        img_label = Label(show_frame, cursor="hand2")
+        self.window.after(100, lambda: self.animate_home(img_label, frames, a_img))
+        img_label.bind("<Button-1>", lambda event: [ self.createWidgets(), self.start_page(), self.stop()])
+        img_label.place(x=0, y=0, relheight=1, relwidth=1)
+        Label(show_frame, text="Welcome", font=("Helvectica", 35), borderwidth=0, bg="#8A51E6").grid(row=0, column=0, sticky=N)
+
+        # Label(show_frame, text="Click to start...", font=("", 20), borderwidth=0, fg='blue', bg='white').grid(row=0, column=0, sticky=S)
         
         # Label(show_frame, text="Welcome!", font=("Helvectica", 35), borderwidth=0, fg="blue", bg="white").grid(row=0, column=0, sticky=N)
         # Label(show_frame, text="Click to start...", font=("", 20), borderwidth=0, fg='blue', bg='white').grid(row=0, column=0, sticky=S)
         # img_label.grid(row=0, column=0, sticky="nswe")
 
         self.window.mainloop() 
+
+    def play(self):
+        pygame.mixer.music.play(loops=-1)
+
+    def stop(self):
+        pygame.mixer.music.stop()
+
+
+    def animate_home(self, lab, frames, a_img):
+        try :
+            frame = next(frames)
+            img = ImageTk.PhotoImage(frame)
+            self.a_img = img
+            lab.config(image=img)
+            self.window.after(100, lambda :self.animate_home(lab, frames, a_img)) # for whale - 50, for evcar -100
+        except StopIteration:
+            frames = ImageSequence.Iterator(a_img)
+            self.window.after(100, lambda :self.animate_home(lab, frames, a_img))
 
 
 
@@ -1155,7 +1201,7 @@ class EVcars():
                 label.grid(row=i//3, column= i%3, padx=10, pady=5, ipadx=10, ipady=40, sticky="nswe")
                 label.bind("<Button-1>", lambda event,a=i: self.show_icon(names[a]))
 
-                self.add_animation(label, car, a_img[i]) # add rotation
+                # self.add_animation(label, car, a_img[i]) # add rotation
  
             # self.window.mainloop()
         else:
@@ -1388,29 +1434,47 @@ class EVcars():
             # ori_brand_img = [img for img in os.listdir("./Project/brands") if img == self.selected_lst[0].lower()+".png"]
             img_path = "./Project/models/"+self.selected_lst[0].lower()
             ori_model_img = [img for img in os.listdir(img_path) if img == self.selected_lst[1]+".png"]
+            # ori_model_img = [img for img in os.listdir(img_path) if img == model_name]
             
-            if model_name not in [model for model in os.listdir("./Project/models/"+self.selected_lst[0].lower())]:
-                if not os.path.exists("./Project/del_imgs"):
-                    os.mkdir("./Project/del_imgs")
-                else:
-                    pass
-                print(model_name)
-                print("Not in models")
+            # print(model_name)
+            # print(ori_model_img)
+            # method 2 (it checks the image is still same, if not replace that image)
+            if model_name != ori_model_img[0]:
                 Image.open(img_path+"/"+ori_model_img[0]).save("./Project/del_imgs/"+ori_model_img[0])
-                os.remove(img_path+"/"+ori_model_img[0])
+                os.remove(img_path+"/"+ori_model_img[0])                
                 try:
                     Image.open(model_path+"/" + model_name).save(img_path+"/"+model_name)
-                    # img.save(img_path+"/"+img)  
-                    # print(img.show())             
                 except:
                     if "suv" in model_name[:-4]:
-                        Image.open("./Project/frame_logo/suv.png").save(img_path+"/"+"suv.png")
+                        Image.open("./Project/frame_logo/suv.png").save(img_path+"/"+ori_model_img[0])
                     else:
-                        Image.open("./Project/frame_logo/car.png").save(img_path+"/"+"car.png")
-                    # img.save(img_path+"/"+img)
-                    # print(img.show())
+                        Image.open("./Project/frame_logo/car.png").save(img_path+"/"+ori_model_img[0])  
             else:
-                print("Model's image wasn't changed.")
+                print("The image doesn't change")
+
+            # method 1
+            # if model_name not in [model for model in os.listdir("./Project/models/"+self.selected_lst[0].lower())]:
+            #     if not os.path.exists("./Project/del_imgs"):
+            #         os.mkdir("./Project/del_imgs")
+            #     # else:
+            #     #     pass
+            #     print(model_name)
+            #     print("Not in models")
+            #     Image.open(img_path+"/"+ori_model_img[0]).save("./Project/del_imgs/"+ori_model_img[0])
+            #     os.remove(img_path+"/"+ori_model_img[0])
+            #     try:
+            #         Image.open(model_path+"/" + model_name).save(img_path+"/"+model_name)
+            #         # img.save(img_path+"/"+img)  
+            #         # print(img.show())             
+            #     except:
+            #         if "suv" in model_name[:-4]:
+            #             Image.open("./Project/frame_logo/suv.png").save(img_path+"/"+"suv.png")
+            #         else:
+            #             Image.open("./Project/frame_logo/car.png").save(img_path+"/"+"car.png")
+            #         # img.save(img_path+"/"+img)
+            #         # print(img.show())
+            # else:
+            #     print("Model's image wasn't changed.")
         except:
             pass
 
@@ -1476,37 +1540,81 @@ class EVcars():
 
     # modified delete func
     def del_directly(self):
-        self.selected_lst.clear()
+        # self.selected_lst.clear()
+        del_list = []
         selected_lines = self.tree_search.selection()
         for x in selected_lines:
             lst = [*self.tree_search.item(x, "values")] # unpacked it as it returns tuple
             print(lst)
-            self.selected_lst.append(lst)
+            # self.selected_lst.append(lst)
+            del_list.append(lst)
         
-        response = messagebox.askyesno("Checking!",f"You selected {len(self.selected_lst)} rows to delete.\n Are you sure to delete?")
+        response = messagebox.askyesno("Checking!",f"You selected {len(del_list)} rows to delete.\n Are you sure to delete?")
         if response:
-            for x in self.selected_lst:
+            for x in del_list:
                 self.datas.remove(x)
 
-                # to delete images
-                model_path = "./Project/models/"+x[0].lower()+"/"+x[1]+".png"
+                try:
+                    # to delete images
+                    model_path = "./Project/models/"+x[0].lower()+"/"+x[1]+".png"
 
-                if not os.path.exists("./Project/del_imgs"):
-                    os.mkdir("./Project/del_imgs")
-                else:
-                    pass
-                Image.open(model_path).save("./Project/del_imgs/"+x[0].lower()+"/"+x[1]+".png")
-                os.remove(model_path)               
+                    if not os.path.exists("./Project/del_imgs"):
+                        os.mkdir("./Project/del_imgs")
+                    else:
+                        pass
+                    Image.open(model_path).save("./Project/del_imgs/"+x[0].lower()+"/"+x[1]+".png")
+                    os.remove(model_path)  
+                except:
+                    print("It's image doesn't exist")             
 
-            self.hist_dict["Delected"] = [x for x in self.selected_lst] 
+
+            self.hist_dict["Delected"] = [x for x in del_list] 
             self.save_datas()
-            complete = messagebox.showinfo("Completed!", f"You delected {len(self.selected_lst)} rows.")
+            complete = messagebox.showinfo("Completed!", f"You delected {len(del_list)} rows.")
             if complete:
                 self.tree_search.delete(*self.tree_search.get_children())
                 # self.tree_search["columns"] = ()
                 self.search_Info() # to show the existing data after deleting
         else:
             pass
+        
+    # to reset data and revert to changed data
+    def chg_option(self, event):
+        # frame = self.start_frame #, self.brands_main_frame, self.search_frame]:
+        popup = Menu(self.start_frame, tearoff=0)
+        popup.add_command(label="")
+        popup.add_command(label="Reset", command=self.reset_data)
+        popup.add_command(label="Revert", command=self.revert_data)
+
+        if self.datas == self.ori_data:
+            popup.entryconfig(0, label="The data are in intact.", state="disabled")
+            popup.entryconfig("Revert", state="disabled")
+            popup.entryconfig("Reset", state="disabled")
+        else:
+            popup.entryconfig(0, state="normal")
+            popup.entryconfig(0, label="The data had been modified!", state="disabled")
+            popup.entryconfig("Reset", state="normal")
+            popup.entryconfig("Revert", state="normal")
+        popup.tk_popup(event.x_root, event.y_root)
+      
+
+
+    def reset_data(self): #reset the current data to 
+        response = messagebox.askokcancel("Reset", "Do you want to reset current data?")
+        print(self.datas == self.ori_data)
+        if response:
+            self.datas = self.ori_data
+            self.sorted_data = self.ori_data
+            self.search_Info()
+            with open(self.file, "w", newline="") as f:
+                reWriter = csv.writer(f)
+                reWriter.writerows(self.datas)
+
+    def revert_data(self):
+        print(self.datas == self.ori_data)
+        for i, data in enumerate(self.ori_data):
+            if data != self.datas[i]:
+                print(data)
 
     def save_datas(self):
         with open(self.file, 'w', newline='') as f:
