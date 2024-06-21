@@ -1,4 +1,3 @@
-# from hdpitkinter.high_dpi_tkinter import HdpiTk # to aware high dpi 
 from tkinter import *
 from tkinter import ttk  # for Treeview
 from tkinter import filedialog
@@ -7,7 +6,8 @@ from PIL import Image, ImageTk, ImageSequence # to manipulate images
 import pygame # to play music
 import os
 import csv
-import ctypes
+import pandas as pd
+# import ctypes
 
 # Set DPI awareness to system-aware
 # ctypes.windll.shcore.SetProcessDpiAwareness(2)
@@ -15,8 +15,8 @@ import ctypes
 class EVcars():
     
     def __init__(self):
-        ctypes.windll.shcore.SetProcessDpiAwareness(2)
-        self.window = Tk() # self.window=HdpiTk()
+        
+        self.window = Tk() 
         # Set high DPI awareness
         self.window.tk.call('tk', 'scaling', 1.25)
 
@@ -39,7 +39,7 @@ class EVcars():
         self.hist_dict = {} # to store what we type in entry as list # modified place
         self.val_lst = [] # I moved it here
         
-        self.window.bind("<Double-Button-1>", self.chg_option)
+        self.window.bind("<Button-2>", self.chg_option)
 
         self.frame_index = 0
 
@@ -53,6 +53,7 @@ class EVcars():
         pygame.mixer.init()
         pygame.mixer.music.load("./Project/bg_music/m1.mp3") # to add bg music in home page
         self.home()
+
         # self.createWidgets() #top menu
         # self.menuBar.entryconfig(" Home ", state=DISABLED)
 
@@ -78,20 +79,20 @@ class EVcars():
         options_a_ico = Image.open("./Project/gif/more.gif") # icon must be image object before animating
         options_ico = ImageTk.PhotoImage(Image.open("./Project/gif/more.gif"))
         
-        shows_a_ico = Image.open("./Project/frame_logo/shows_info.png")
-        shows_info_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/shows_info.png"))
+        shows_a_ico = Image.open("./Project/gif/folder.gif")
+        shows_info_ico = ImageTk.PhotoImage(Image.open("./Project/gif/folder.gif"))
 
         self.noti_labl = Label(self.start_frame, text="Please load file first!", bg="lightgrey", font=('Halvectica', 14, 'bold'))
         self.noti_labl.grid(row=0, column=0, columnspan=2, pady=10, ipadx=5, ipady=5)
         # 
         #  
-        self.load_btn = Button(self.start_frame, text=" Load file",image=self.load_ico, compound="left", width=125, height=25, relief="groove", overrelief="raised", activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
+        self.load_btn = Button(self.start_frame, text=" Load file",image=self.load_ico, compound="left", width=125, height=25, activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
         self.load_btn.grid(row=1, column=0, pady=5, ipadx=5, ipady=5)
 
-        shows_info_btn = Button(self.start_frame, text=" Show Cars Info", activebackground="lightblue",image=shows_info_ico, compound="left", width=129, height=25, command=self.show_Info, bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), cursor="hand2")
+        shows_info_btn = Button(self.start_frame, text=" Show Cars Info", activebackground="lightblue",image=shows_info_ico, compound="left", width=135, height=25, command=self.show_Info, bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), cursor="hand2")
         shows_info_btn.grid(row=2, column=0, pady=20, ipadx=5, ipady=5)
 
-        more_btn = Button(self.start_frame, activebackground="lightblue", text=" More..", image=options_ico, compound="left",  bg="lightblue", width=125, height=25, command=self.explore_Info, fg="black", font=('Consolas', 11, 'bold'), cursor="hand2")
+        more_btn = Button(self.start_frame, activebackground="lightblue", text=" More", image=options_ico, compound="left", bg="lightblue", width=125, height=25, command=self.explore_Info, fg="black", font=('Consolas', 11, 'bold'), cursor="hand2")
         more_btn.grid(row=3, column=0, pady=20, ipadx=5, ipady=5)
 
         self.warn_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/error.png"))
@@ -103,24 +104,30 @@ class EVcars():
         quit_btn = Button(self.start_frame, text=" Quit", image=quit_ico, compound="left", width=65, height=25, activebackground="lightblue", bg="lightblue", activeforeground="red", font=('Consolas', 11, 'bold'), command=self.ask_confirm, cursor="hand2")
         quit_btn.grid(row=5, column=0, pady=10)
 
-        gp_name_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/gp_name_box.png").resize((570, 75)))
-        Label(self.start_frame, text="Presented by Team-3 (The Python Ninjas)", image=gp_name_box, compound="center", font=('Helvectica', 12, "bold"), bg="lightgrey").grid(row=6, column=0, sticky='ws')
+        self.gp_name_box = ImageTk.PhotoImage(Image.open("./Project/frame_logo/gp_name_box.png").resize((570, 75)))
+        Label(self.start_frame, text="Presented by Team-3 (The Python Ninjas)", image=self.gp_name_box, compound="center", font=('Helvectica', 12, "bold"), bg="lightgrey").grid(row=6, column=0, sticky='ws')
     
+        # self.back_a_ico = Image.open("./Project/gif/left-arrow.gif")
+        self.save_a_ico = Image.open("./Project/gif/save-file.gif")
+        self.cancel_a_ico = Image.open("./Project/gif/turn-left.gif")
+        self.confirm_a_ico = Image.open("./Project/gif/yes-or-no.gif")
+
         self.back_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/back_ico.png"))
         self.save_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/save.png"))
         self.cancel_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/undo.png"))
         self.confirm_ico = ImageTk.PhotoImage(Image.open("./Project/frame_logo/confirm.png"))
 
         # added animation to btn
-        self.add_animation(shows_info_btn, shows_info_ico, shows_a_ico) # function to add rotating animation
+        # self.add_animation(shows_info_btn, shows_info_ico, shows_a_ico) # function to add rotating animation
 
         # added gif animation to btn
         # self.frames_iter = ImageSequence.Iterator(self.load_a_ico)
         self.gif_animation(self.load_btn, self.load_ico, self.load_a_ico) # fumction to add gif animation
         self.gif_animation(quit_btn, quit_ico, quit_a_ico)
         self.gif_animation(more_btn, options_ico, options_a_ico)
+        self.gif_animation(shows_info_btn, shows_info_ico, shows_a_ico)
 
-        self.window.mainloop()  # if we dont use this here, used img will not be displayed (cuz I didnt make references of images)
+        # self.window.mainloop()  # if we dont use this here, used img will not be displayed (cuz I didnt make references of images)
 
 
     # main animation func to use with btns
@@ -154,34 +161,36 @@ class EVcars():
 
     # animate using gif
     def gif_animation(self, btn, icon, a_icon):
-        frames_iter = ImageSequence.Iterator(a_icon)
-        btn.bind("<Enter>", lambda event: self.hover_on(btn, frames_iter, icon, a_icon, event))
+        img_frames= ImageSequence.Iterator(a_icon)
+        btn.bind("<Enter>", lambda event: self.hover_on(btn, img_frames, icon, a_icon, event))
         btn.bind("<Leave>", lambda event: self.hover_off(btn, icon, event))
         # self.animate_gif(frames, btn, a_icon)
 
 
-    def hover_on(self, btn, frames, icon, a_icon, event):
-        self.gif = self.window.after(15, lambda: self.animate_gif(btn, frames, icon, a_icon))
+    def hover_on(self, btn, img_frames, icon, a_icon, event):
+        self.gif = self.window.after(15, lambda: self.animate_gif(btn, img_frames, icon, a_icon))
     
-    def animate_gif(self, btn, frames, icon, a_icon):
+    def animate_gif(self, btn, img_frames, icon, a_icon):
         try:
             # for frame in frames:
-            frame = next(frames)
+            frame = next(img_frames)
             img = ImageTk.PhotoImage(frame)
             self.img =img # ***
             btn.config(image=self.img)
-            self.gif = self.window.after(15, lambda: self.animate_gif(btn, frames, icon, a_icon))
+            self.gif = self.window.after(15, lambda: self.animate_gif(btn, img_frames, icon, a_icon))
 
             # self.window.update_idletasks() # to update frame displays
         except StopIteration:
-            frames = ImageSequence.Iterator(a_icon)
+            img_frames = ImageSequence.Iterator(a_icon)
             # btn.config(image=icon)
-            self.gif = self.window.after(15, lambda: self.animate_gif(btn, frames, icon, a_icon))  # to continuously animate (reset the frames)
+            self.gif = self.window.after(15, lambda: self.animate_gif(btn, img_frames, icon, a_icon))  # to continuously animate (reset the frames)
 
     
     def hover_off(self, btn, icon, event):
+        
         self.window.after_cancel(self.gif)
         btn.config(image=icon)
+
 
 
     def ask_confirm(self):
@@ -230,7 +239,8 @@ class EVcars():
             # print(self.datas)
             # if file:
             #     self.display_info()
-            self.window.mainloop() 
+        # print(self.file)
+            # self.window.mainloop() 
 
     # 1st window
     # this create winfo   --> Try it! <--
@@ -247,7 +257,7 @@ class EVcars():
         # car_logo = ImageTk.PhotoImage(Image.open("./Project/frame_logo/cars.png"))
 
         self.menuBar.add_cascade(label=" Home ", command=lambda: [self.start_frame.tkraise(), self.dis_menu(" Home "), self.chg_back()])
-        self.menuBar.add_cascade(label=" Info ", activebackground="blue", command=lambda: [self.show_cars_info_ico(),self.dis_menu(" Info "), self.chg_back()]) 
+        self.menuBar.add_cascade(label=" Info ", activebackground="blue", command=lambda: [self.show_cars_info_ico(), self.chg_back()]) 
 
     # probably we dont need this       
     def chg_back(self):
@@ -303,20 +313,58 @@ class EVcars():
         frames = ImageSequence.Iterator(a_img)
         img_label = Label(show_frame, cursor="hand2")
         self.window.after(100, lambda: self.animate_home(img_label, frames, a_img))
-        img_label.bind("<Button-1>", lambda event: [ self.createWidgets(), self.start_page(), self.stop()])
+        img_label.bind("<Button-1>", lambda event: [self.stop(), self.createWidgets(), self.start_page()])
         img_label.place(x=0, y=0, relheight=1, relwidth=1)
         Label(show_frame, text="Welcome", font=("Helvectica", 35), borderwidth=0, bg="#8A51E6").grid(row=0, column=0, sticky=N)
 
-        # Label(show_frame, text="Click to start...", font=("", 20), borderwidth=0, fg='blue', bg='white').grid(row=0, column=0, sticky=S)
-        
+        prev_msg = ""
+        msgs = iter(["Team-3\n", "SSM-15089(leader)", "SSM-15431", "SSM-15432", "SSM-5117"])
+        lab = Label(show_frame, text="", compound="top", font=("", 13, "bold"), borderwidth=0, bg='#3F9CD1')
+        lab.grid(row=0, column=0, sticky=W)
+        lab2 = Label(show_frame, text="", font=("Helvectica", 20), borderwidth=0, fg="white", bg="#515252")
+        lab2.grid(row=1, column=0, sticky="ws")
+
+        self.window.after(2500, lambda: self.show_about(lab, lab2, prev_msg, msgs))
+
+        self.ismute = False
+        self.loud_img = ImageTk.PhotoImage(Image.open("./Project/frame_logo/loud-speaker.png").resize((40, 40)))
+        self.mute_img = ImageTk.PhotoImage(Image.open("./Project/frame_logo/mute.png").resize((40, 40)))
+        self.mute_btn = Button(show_frame, image=self.loud_img, borderwidth=0, command=self.mute)
+        self.mute_btn.grid(row=0, column=0, sticky="ne")
         # Label(show_frame, text="Welcome!", font=("Helvectica", 35), borderwidth=0, fg="blue", bg="white").grid(row=0, column=0, sticky=N)
         # Label(show_frame, text="Click to start...", font=("", 20), borderwidth=0, fg='blue', bg='white').grid(row=0, column=0, sticky=S)
         # img_label.grid(row=0, column=0, sticky="nswe")
 
-        self.window.mainloop() 
+        # self.window.mainloop() 
+
+    def show_about(self, labl, labl2, prev_msg, msgs):
+        self.gp_logo = ImageTk.PhotoImage(Image.open("./Project/frame_logo/group_logo.png"))
+        try:
+            msg = next(msgs)
+            cur_msg = prev_msg + msg + "\n"
+            labl.config(text=cur_msg, image=self.gp_logo, anchor="w")
+            self.window.after(2500, lambda: self.show_about(labl, labl2, cur_msg, msgs))
+        except StopIteration:
+            labl.grid_forget()
+            prev_msg = "Presented By Team-3(The Python Ninjas)"
+            labl2.config(text=prev_msg)
+            
+            
+
+
 
     def play(self):
         pygame.mixer.music.play(loops=-1)
+        pygame.mixer.music.set_volume(0.3)
+
+    def mute(self):
+        self.ismute = not self.ismute
+        if self.ismute:
+           pygame.mixer.music.set_volume(0)
+           self.mute_btn.config(image=self.mute_img)
+        else:
+            pygame.mixer.music.set_volume(0.5) 
+            self.mute_btn.config(image=self.loud_img)
 
     def stop(self):
         pygame.mixer.music.stop()
@@ -350,13 +398,14 @@ class EVcars():
             self.display_frame = Frame(self.window)
             self.display_frame.grid(row=0, column=0, sticky="nsew")
 
-            back_btn = Button(self.display_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.display_frame.destroy(), self.dis_menu(" Home ")])
+            back_btn = Button(self.display_frame, image=self.back_ico, text=" Back", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.display_frame.destroy(), self.dis_menu(" Home ")])
             # 13/6/24 removed show datas button
             # open_btn = Button(self.display_frame, relief="sunken", text="Show datas", bg="blue", fg="white", command=self.display_info)
             back_btn.pack(anchor=W, padx=10, pady=10)
+            # self.gif_animation(back_btn, self.back_ico, self.back_a_ico)
             # open_btn.pack(padx=10, pady=10)
 
-            self.data_info = Label(self.display_frame, text="")
+            self.data_info = Label(self.display_frame, text="", font=("", 14, "bold"))
             self.data_info.pack(pady=5)
 
             # tree view shows columnwide so I created yscroll only
@@ -384,7 +433,7 @@ class EVcars():
         else:
             self.info_labl.config(image=self.warn_box, text=f"\nYour data is {'invalid' if self.datas else 'empty'}.\nFile is not loaded yet!", compound="top", fg="red")
     
-        self.window.mainloop()  
+        # self.window.mainloop()  
 
     def display_info(self):
 
@@ -474,16 +523,21 @@ class EVcars():
             btn_frame.grid(row=10, column=0, sticky="ns")
 
             opt = ["./Project/frame_logo/back_ico.png", "./Project/frame_logo/search.png", "./Project/frame_logo/add.png", "./Project/frame_logo/update.png", "./Project/frame_logo/delete.png"]
-            opt_img=[]
+            self.opt_img=[]
             for i in opt:
-                opt_img.append(ImageTk.PhotoImage(Image.open(i)))
+                self.opt_img.append(ImageTk.PhotoImage(Image.open(i)))
 
             self.option_lst = [" Back", " Search", " Add", " Update", " Delete"]
             self.btns = [] ## not used yet
             for i, opt in enumerate(self.option_lst):
-                btn = Button(btn_frame, image=opt_img[i], text=opt, compound="left", fg="black", bg="lightblue", activebackground="lightblue", font=('Consolas', 11, 'bold'), command=lambda a=i: self.process_button(a)) # I will go with i instead of opt
-                btn.grid(row=1, column=3+i*2, padx=20, pady=5, ipadx=10, ipady=5, sticky="we")
+                btn = Button(btn_frame, image=self.opt_img[i], text=opt, width=100, height=20, compound="left", fg="black", bg="lightblue", activebackground="lightblue", font=('Consolas', 11, 'bold'), command=lambda a=i: self.process_button(a)) # I will go with i instead of opt
+                btn.grid(row=1, column=3+i*2, padx=20, pady=5, ipadx=5, ipady=5, sticky="we")#  
                 self.btns.append(btn)
+
+            opt_a_ico = ["./Project/gif/search-box.gif", "./Project/gif/add-folder.gif", "./Project/gif/edit.gif", "./Project/gif/delete.gif"]
+            self.opt_a_ico = [Image.open(img) for img in opt_a_ico]
+            for i, btn in enumerate(self.btns[1:]):
+                self.gif_animation(btn, self.opt_img[i+1], self.opt_a_ico[i])
 
             # self.show_txt = Entry(btn_frame, borderwidth=2, font=("Consolas", 10))
             # self.show_txt.grid(row=2, column=5,sticky="we")#, ipady=5, ipadx=350)
@@ -532,7 +586,7 @@ class EVcars():
             
         else:
             self.info_labl.config(image=self.warn_box, text=f"\nYour data is {'invaid' if self.datas else 'empty'}.\n Please load the data!", compound="top")
-        self.window.mainloop() 
+        # self.window.mainloop() 
 
     # new add feature to edit del
     def store_value(self, event):
@@ -675,30 +729,36 @@ class EVcars():
             self.tree_search.heading(col, text=col)
             self.tree_search.column(col, width=100)
 
-        search_lst = [data for data in self.val_lst if data != ""]
-        result = [data for data in self.sorted_data if all(item in data for item in search_lst )]        
-        # result = [data for data in self.datas if all(item in data for item in self.val_lst if item != '')]
-        # result = [data for data in self.datas if any(item in data for item in self.val_lst if item != '' )]  # prefered one ,    all returns True if bool(x) is  True for all value in iterable
-        
-        # target_lst = self.datas
-        # for item in search_lst:
-        #     next_lst = self.find_val(item, target_lst)
-        #     target_lst = next_lst
-        # print(target_lst)
+        #  used - search_lst = [data for data in self.val_lst if data != ""]
+        # used  - result = [data for data in self.sorted_data if all(item in data for item in search_lst )] 
+
+        # df = pd.DataFrame(self.datas[1:], columns=self.datas[0])
+        df = pd.read_csv(self.file)
+        df = df.astype(str)
+        search_lst = [*zip(self.datas[0], self.val_lst)]
+
+        # Initialize an empty mask
+        mask = pd.Series(True, index=df.index)
+
+        # Apply conditions from search_lst
+        for col, val in search_lst:
+            # For each tuple in search_lst, we update the mask by performing an element-wise AND operation (&)
+            # with the condition based on the column and search value.
+            mask &= df[col].str.contains(val, case=False)
+
+        result = df[mask]
+        result_lst = result.to_numpy().tolist() # chnage it to numpy array , to change to list , use to_numpy().tolist()
+        # result = df
+        # print(df.info())
+
+
 
         self.show_txt.config(fg="green")
-        self.show_txt.insert(END, f"{len(result)} results were found!")
+        self.show_txt.insert(END, f"{len(result_lst)} results were found!")
         self.show_txt.config(state="readonly")
 
-        for row in result:
+        for row in result_lst:
             self.tree_search.insert("", "end", values=row)
-
-    # def find_val(self,item, target_lst):
-    #     next_lst=[]
-    #     for lst in target_lst:
-    #         if item in lst:
-    #             next_lst.append(lst)
-    #     return next_lst
 
 
     def add_Info(self):
@@ -1180,7 +1240,7 @@ class EVcars():
             self.brands_main_frame.tkraise() # (optional)Even if we don't add this, it works as intended
 
             # self.brands_main_frame.rowconfigure(0, weight=1)
-            Button(self.brands_main_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.brands_main_frame.destroy(), self.dis_menu(" Home ")])\
+            Button(self.brands_main_frame, image=self.back_ico, text=" Back", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.start_frame.tkraise(), self.brands_main_frame.destroy(), self.dis_menu(" Home ")])\
                 .grid(row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky="w")
 
         
@@ -1193,10 +1253,10 @@ class EVcars():
 
             # names = [name.split("/")[-1][:-4].upper() for name in self.cars_img]
             names = [name[:-4].upper() for name in self.cars_img]
-            images = [PhotoImage(file=brands_path+image) for image in self.cars_img]
+            self.images = [PhotoImage(file=brands_path+image) for image in self.cars_img]
             a_img = [Image.open(brands_path+image) for image in self.cars_img] # to add rotating image
 
-            for i, car in enumerate(images):
+            for i, car in enumerate(self.images):
                 label =Label(self.ico_frame, image=car, background="skyblue", relief="solid", cursor="hand2")
                 label.grid(row=i//3, column= i%3, padx=10, pady=5, ipadx=10, ipady=40, sticky="nswe")
                 label.bind("<Button-1>", lambda event,a=i: self.show_icon(names[a]))
@@ -1205,10 +1265,10 @@ class EVcars():
  
             # self.window.mainloop()
         else:
-            self.info_labl.config(text="\nYour data is empty.\n File is not loaded yet!")
+            self.info_labl.config(image=self.warn_box, text="\nYour data is empty.\n File is not loaded yet!")
         # self.schedule_next_image()
 
-        self.window.mainloop()   # if I don't add this logos will not display
+        # self.window.mainloop()   # if I don't add this logos will not display
 
     def show_icon(self,name):
         self.brands_main_frame.grid_forget()
@@ -1220,17 +1280,17 @@ class EVcars():
         
         self.ico_main_frame = Frame(self.window)
         self.ico_main_frame.grid(row=0, column=0, sticky="nsew")
-        self.ico_main_frame.columnconfigure(7, weight=1)
+        self.ico_main_frame.columnconfigure(7, weight=1) #7
         # self.ico_main_frame.rowconfigure(5, weight=1)
 
         models_count = len([row[1] for row in self.datas[1:] if name in row])
 
-        self.ico_back = Button(self.ico_main_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue",
+        self.back_btn = Button(self.ico_main_frame, image=self.back_ico, text=" Back", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue",
                                 command=lambda: [self.pause_slideshow(), self.ico_main_frame.destroy(), self.show_cars_info_ico()])   # need to cancel after callbacks first, if not it will keep running although it was destroyed
-        self.ico_back.grid(row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky=W)                                             
+        self.back_btn.grid(row=0, column=0, padx=5, pady=5, ipadx=5, ipady=5, sticky=W)                                             
 
         self.brand_name = Label(self.ico_main_frame, text=f"{self.name} ({models_count})" , font=('', 12, 'bold'))
-        self.brand_name.grid(row=0, column=7, padx=5, pady=5, sticky=S) 
+        self.brand_name.grid(row=0, column=7, padx=5, pady=5, sticky=S) # 7
 
         path = "./Project/models/" + name.lower()+"/"
         # print(os.path.exists(path))
@@ -1263,27 +1323,27 @@ class EVcars():
         # Button(self.root, text=" > ", font=('', 10, 'bold'), background="skyblue", command=self.next_ico).grid(row=2, column=7, padx=5, pady=5, ipadx=5, ipady=5, sticky=W)
 
         self.ico_frame1 = Frame(self.ico_main_frame, background="skyblue", borderwidth=2, relief="solid")
-        self.ico_frame1.grid(row=1, column=7, sticky="s")
+        self.ico_frame1.grid(row=1, column=7, sticky="s") # 7
         self.ico_frame1.columnconfigure([7, 8], weight=1)
 
         self.ico = Label(self.ico_frame1, image=self.img_modl[self.img_counter][0], background="skyblue", cursor="hand2")
-        self.ico.grid(row=1, column=7, pady=10, sticky=NSEW)
+        self.ico.grid(row=1, column=7, pady=10, sticky=NSEW) 
         # self.ico.bind("<Button-1>", lambda event, a=self.img_modl[self.img_counter][1]: self.img_info(a))
 
         # self.action_on = False # to toggle button
         self.ico.bind("<Button-1>", lambda event: self.img_info())
  
-        back_ico = PhotoImage(file="./Project/frame_logo/back.png")
-        Button(self.ico_frame1, text=" < ", image=back_ico, compound="none",background="skyblue", borderwidth=0, activebackground="skyblue", cursor="hand2", command=self.prev_ico).grid(row=2, column=0, padx=5, ipadx=5, ipady=5, sticky=W)
+        self.back_arrow = PhotoImage(file="./Project/frame_logo/back.png")
+        Button(self.ico_frame1, text=" < ", image=self.back_arrow, compound="none",background="skyblue", borderwidth=0, activebackground="skyblue", cursor="hand2", command=self.prev_ico).grid(row=2, column=0, padx=5, ipadx=5, ipady=5, sticky=W)
         
         self.ico_name = Label(self.ico_frame1, text=f"{self.img_counter+1}.   {self.img_modl[self.img_counter][1]} ( ${int(self.model[0][-1]):,.0f} )", background="skyblue", font=7)
         self.ico_name.grid(row=2, column=7, sticky="n") 
 
-        next_ico = PhotoImage(file="./Project/frame_logo/next.png")
-        Button(self.ico_frame1, text=" > ", image=next_ico, compound="none", background="skyblue", borderwidth=0, activebackground="skyblue", cursor="hand2", command=self.next_ico).grid(row=2, column=8, padx=5, ipadx=5, ipady=5, sticky=E)
+        self.next_btn = PhotoImage(file="./Project/frame_logo/next.png")
+        Button(self.ico_frame1, text=" > ", image=self.next_btn, compound="none", background="skyblue", borderwidth=0, activebackground="skyblue", cursor="hand2", command=self.next_ico).grid(row=2, column=8, padx=5, ipadx=5, ipady=5, sticky=E)
 
         self.txt_frame = Frame(self.ico_main_frame, width=80, borderwidth=2, relief="solid", background="skyblue")
-        self.txt_frame.grid(row=5, column=5, padx= 10, pady=5, ipadx=20, sticky=EW)
+        self.txt_frame.grid(row=5, column=5)#, padx= 10, pady=5, ipadx=20, sticky=EW) # 5
         
         for i, column in enumerate(self.datas[0][1:7]):
             Label(self.txt_frame, text=column, justify='left',background="skyblue").grid(row=i , column=0, sticky=W, padx=5, pady=5)
@@ -1296,13 +1356,13 @@ class EVcars():
         self.txt_frame.grid_forget()
         # self.schedule_next_image()
         self.ico_main_frame.update_idletasks()
-        self.window.mainloop() 
+        # self.window.mainloop() 
 
 
     def img_info(self):
         self.action_on = not self.action_on # toggling using boolean
         if self.action_on:
-            self.txt_frame.grid(row=4, column=7, ipadx=50)
+            self.txt_frame.grid(row=5, column=7, ipadx=50, pady=5)
             self.pause_slideshow()
         else:
             self.txt_frame.grid_forget()
@@ -1417,10 +1477,13 @@ class EVcars():
         btn_frame = Frame(self.edit_frame1)
         btn_frame.grid(row=10, column=0, sticky="ns")
 
-        Button(btn_frame, image=self.back_ico, text=" Back", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.search_frame.tkraise(), self.edit_frame1.destroy()])\
+        Button(btn_frame, image=self.back_ico, text=" Back", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=lambda: [self.search_frame.tkraise(), self.edit_frame1.destroy()])\
         .grid(row=1, column= 0, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
-        Button(btn_frame, image=self.save_ico, text=" Save", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.update).grid(row=1, column=2, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
-    
+
+        btn= Button(btn_frame, image=self.save_ico, text=" Save", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.update)
+        btn.grid(row=1, column=2, padx=20, pady=5, ipadx=5, ipady=5, sticky=EW)
+        self.gif_animation(btn, self.save_ico, self.save_a_ico)
+
     def update(self):
 
         self.modified_lst = []
@@ -1481,7 +1544,7 @@ class EVcars():
 
 
         frame2 = Frame(self.edit_frame1, background="lightgrey", relief="solid", borderwidth=1)
-        frame2.grid(row=17, column=0, columnspan=30, rowspan=8, padx=30, ipadx=3, ipady=3, sticky="nswe")
+        frame2.grid(row=17, column=0, columnspan=30, rowspan=8, padx=30, sticky="nswe")# ipadx=3, ipady=3,
         # # frame2.grid_propagate()
         frame2.columnconfigure(1, weight=1)
         frame2.rowconfigure(1, weight=0)
@@ -1491,15 +1554,22 @@ class EVcars():
 
         if same:
             # if all modified datas and selected datas are same, just go save and stright back 
+            
             frame2.destroy()
             self.notify()
+
             
 
         else:
         # self.show_txt = Entry(frame2, borderwidth=2, font=("Consolas", 12), justify="center")
         # self.show_txt.grid(row=0, column=0, sticky="we")#, ipady=5, ipadx=350)
-            Button(frame2, image=self.cancel_ico, text=" Cancel", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=frame2.destroy).grid(row=0, column=1, padx=25, ipadx=5, ipady=5, sticky=NW)
-            Button(frame2, image=self.confirm_ico, text=" Confirm", compound="left", font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.notify).grid(row=0, column=1, padx=5, ipadx=5, ipady=5, sticky=NE)
+            self.cancel_btn = Button(frame2, image=self.cancel_ico, text=" Cancel", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=frame2.destroy)
+            self.cancel_btn.grid(row=0, column=1, ipadx=5, ipady=5, sticky=NW)#, padx=25
+            self.confirm_btn = Button(frame2, image=self.confirm_ico, text=" Confirm", compound="left", width=100, height=20, font=('Consolas', 11, 'bold'), background="lightblue", activebackground="lightblue", command=self.notify)
+            self.confirm_btn.grid(row=0, column=1, ipadx=5, ipady=5, sticky=NE)# padx=5,
+
+            # self.gif_animation(self.cancel_btn, self.cancel_ico, self.cancel_a_ico) # I got display error in console 
+            self.gif_animation(self.confirm_btn, self.confirm_ico, self.confirm_a_ico)
 
             self.edit_info = Text(frame2, wrap=None, font=("Consolas", 12), height=12, relief="solid", borderwidth=1)
             self.edit_info.grid(row=1, column=1, sticky="nsew")
@@ -1537,6 +1607,10 @@ class EVcars():
 
         self.edit_frame1.destroy()
         self.search_frame.tkraise()
+
+    # def del_reference(self): # to stop animation after btn is destroyed
+    #      Button.unbind
+
 
     # modified delete func
     def del_directly(self):
