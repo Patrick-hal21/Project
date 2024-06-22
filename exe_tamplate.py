@@ -4,7 +4,7 @@ from tkinter import filedialog
 from tkinter import messagebox
 from PIL import Image, ImageTk, ImageSequence # to manipulate images
 import pandas as pd  # to handle csv data
-import pygame # to play music
+import pygame.mixer # to play music
 import os
 import csv # to read csv file
 # import ctypes
@@ -40,12 +40,16 @@ class EVcars():
         self.window.columnconfigure(0, weight=1)
         self.window.rowconfigure(0, weight=1)
 
+        # music_path = os.path.abspath("m1.mp3")
+        # pygame.init()
+        pygame.mixer.init()
+        pygame.mixer.music.load("./_internal/bg_music/m1.mp3")# to add bg music in home page
+
         self.home()
         # self.createWidgets() #top menu
         # self.menuBar.entryconfig(" Home ", state=DISABLED)
 
-        pygame.mixer.init()
-        pygame.mixer.music.load("./_internal/bg_music/m1.mp3") # to add bg music in home page
+
 
         self.window.mainloop() 
 
@@ -68,14 +72,14 @@ class EVcars():
         options_a_ico = Image.open("./_internal/gif/more.gif") # icon must be image object before animating
         options_ico = ImageTk.PhotoImage(Image.open("./_internal/gif/more.gif"))
         
-        shows_a_ico = Image.open("./_internal/frame_logo/folder.gif")
-        shows_info_ico = ImageTk.PhotoImage(Image.open("./_internal/frame_logo/folder.gif"))
+        shows_a_ico = Image.open("./_internal/gif/folder.gif")
+        shows_info_ico = ImageTk.PhotoImage(Image.open("./_internal/gif/folder.gif"))
 
         self.noti_labl = Label(self.start_frame, text="Please load file first!", bg="lightgrey", font=('Halvectica', 14, 'bold'))
         self.noti_labl.grid(row=0, column=0, columnspan=2, pady=10, ipadx=5, ipady=5)
         # 
         #  
-        self.load_btn = Button(self.start_frame, text=" Load file",image=self.load_ico, compound="left", width=125, height=25, relief="groove", overrelief="raised", activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
+        self.load_btn = Button(self.start_frame, text=" Load file",image=self.load_ico, compound="left", width=125, height=25, activebackground="lightblue", bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), command=self.load_file, cursor="hand2")
         self.load_btn.grid(row=1, column=0, pady=5, ipadx=5, ipady=5)
 
         shows_info_btn = Button(self.start_frame, text=" Show Cars Info", activebackground="lightblue",image=shows_info_ico, compound="left", width=135, height=25, command=self.show_Info, bg="lightblue", fg="black", font=('Consolas', 11, 'bold'), cursor="hand2")
@@ -116,7 +120,7 @@ class EVcars():
         self.gif_animation(more_btn, options_ico, options_a_ico)
         self.gif_animation(shows_info_btn, shows_info_ico, shows_a_ico)
 
-        self.window.mainloop()  # if we dont use this here, used img will not be displayed (cuz I didnt make references of images)
+        # self.window.mainloop()  # if we dont use this here, used img will not be displayed (cuz I didnt make references of images)
 
 
     # main animation func to use with btns
@@ -281,7 +285,7 @@ class EVcars():
         
 
         # evcar bg ="#D6FCEE", moving car bg =#8A51E6
-        a_img = Image.open("./internal/gif/moving car.gif")
+        a_img = Image.open("./_internal/gif/moving car.gif")
         frames = ImageSequence.Iterator(a_img)
         img_label = Label(show_frame, cursor="hand2")
         self.window.after(100, lambda: self.animate_home(img_label, frames, a_img))
@@ -306,7 +310,7 @@ class EVcars():
         
 
     def show_about(self, labl, labl2, prev_msg, msgs):
-        self.gp_logo = ImageTk.PhotoImage(Image.open("./Project/frame_logo/group_logo.png"))
+        self.gp_logo = ImageTk.PhotoImage(Image.open("./_internal/frame_logo/group_logo.png"))
         try:
             msg = next(msgs)
             cur_msg = prev_msg + msg + "\n"
@@ -481,7 +485,7 @@ class EVcars():
             self.btns = [] ## not used yet
             for i, opt in enumerate(self.option_lst):
                 btn = Button(btn_frame, image=self.opt_img[i], text=opt, compound="left", width=100, height=20, fg="black", bg="lightblue", activebackground="lightblue", font=('Consolas', 11, 'bold'), command=lambda a=i: self.process_button(a)) # I will go with i instead of opt
-                btn.grid(row=1, column=3+i*2, padx=20, pady=5, ipadx=10, ipady=5, sticky="we")
+                btn.grid(row=1, column=3+i*2, padx=20, pady=5, ipady=5, sticky="we")
                 self.btns.append(btn)
 
             opt_a_ico = ["./_internal/gif/search-box.gif", "./_internal/gif/add-folder.gif", "./_internal/gif/edit.gif", "./_internal/gif/delete.gif"]
@@ -841,16 +845,16 @@ class EVcars():
 
             # names = [name.split("/")[-1][:-4].upper() for name in self.cars_img]
             names = [name[:-4].upper() for name in self.cars_img]
-            images = [PhotoImage(file=brands_path+image) for image in self.cars_img]
+            self.images = [PhotoImage(file=brands_path+image) for image in self.cars_img]
             a_img = [Image.open(brands_path+image) for image in self.cars_img] # to add rotating image
 
-            for i, car in enumerate(images):
+            for i, car in enumerate(self.images):
                 label =Label(self.ico_frame, image=car, background="skyblue", relief="solid", cursor="hand2")
                 label.grid(row=i//3, column= i%3, padx=10, pady=5, ipadx=10, ipady=40, sticky="nswe")
                 label.bind("<Button-1>", lambda event,a=i: self.show_icon(names[a]))
  
         else:
-            self.info_labl.config(text="\nYour data is empty.\n File is not loaded yet!")
+            self.info_labl.config(image=self.warn_box, text="\nYour data is empty.\n File is not loaded yet!")
 
     def show_icon(self,name):
         self.brands_main_frame.grid_forget()
